@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Splatfont2';
+  src: url('Splatfont2.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Splatfont2', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+}
+
+body {
+  background-image: url('image/background.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+body {
+	padding-top: 70px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.paragraphe1 {
+  margin-bottom: 5px; /* Ajustez la valeur selon vos besoins */
+  margin-top: 5px;
+  font-size: 18px; /* Ajustez la valeur selon vos besoins */
+  text-shadow: 2px 2px 4px #FFFFFF, -2px -2px 4px #FFFFFF;
+}
+
+.paragraphe2 {
+  margin-top: 5px; /* Ajustez la valeur selon vos besoins */
+  font-size: 18px; /* Ajustez la valeur selon vos besoins */
+  text-shadow: 2px 2px 4px #FFFFFF, -2px -2px 4px #FFFFFF;
+}
+
+.titre1 {
+	margin-bottom: 1px;
+	margin-top: 5px;
+}
+
+h1 {
+  font-size: 60px; /* Ajustez la valeur selon vos besoins */
+  text-shadow: 4px 4px 8px #800080, -4px -4px 8px #FF0000;
+  color : white
+}
+
+h2 {
+  font-size: 40px; /* Ajustez la valeur selon vos besoins */
+  text-shadow: 4px 4px 8px #800080, -4px -4px 8px #FF0000;
+  color : white ;
+  margin-top: 200px ;
+  margin-bottom: 1px ;
+}
+
+p {
+  font-size: 20px; /* Ajustez la valeur selon vos besoins */
+}
+
+.box {
+  background-color: #f2f2f2;
+  border: 4px solid #ccc;
+  padding: 40px;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+table {
+  width: 900px; /* Définit la largeur du tableau à 100% de son conteneur */
+  border-collapse: collapse; /* Fusionne les bordures des cellules */
+  background-color: #f2f2f2; /* Définit la couleur de fond du tableau */
+  border: 3px solid black;
+  margin-left : 50px;
+  margin-right : 50px;
+}
+
+th, td {
+  padding: 10px; /* Ajoute un espace intérieur de 10 pixels aux cellules */
+  text-align: center; /* Centre le contenu des cellules */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Définit la couleur de fond des lignes paires */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Définit la couleur de fond des lignes impaires */
+}
+
+.image-colonne {
+  width: 60px; /* Définissez la largeur souhaitée pour les images */
+  height: auto; /* Permet de conserver les proportions d'origine de l'image */
+}
+
+.image-colonne2 {
+  width: 160px; /* Définissez la largeur souhaitée pour les images */
+  height: auto; /* Permet de conserver les proportions d'origine de l'image */
+}
+
+.or {
+  color: #FFD700;
+  font-size: 30px;
+}
+
+.argent {
+  color: #C0C0C0;
+  font-size: 25px;
+}
+
+.bronze {
+	color: #CD7F32;
+  font-size: 22px;
+}
+
+caption {
+	font-size: 100px; /* Ajustez la valeur selon vos besoins */
+	text-shadow: 32px 32px 64px rgba(200, 123, 243, 1), -32px -32px 64px rgba(106, 13, 173, 1);
+	color : white ;
+	margin-bottom: 0px ;
+	margin: 0;
+	padding: 0;
+}
+	
+.logoequipe {
+	width: 250px; /* Définissez la largeur souhaitée pour les images */
+	height: auto; /* Permet de conserver les proportions d'origine de l'image */
+}
+
+.titreequipe {
+	text-decoration: underline;
+	font-size: 35px
+}
+
+h4 {
+	font-size: 30px;
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+h5 {
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+.bloc-couleur1 {
+  background-color: white;
+  width: 1000px;
+  height: 380px;
+  border: 2px solid black;
+}
+
+.bloc-couleur2 {
+  background-color: white;
+  width: 1000px;
+  height: 130px;
+  border: 2px solid black;
+}
+
+.bloc-couleur3 {
+  background-color: white;
+  width: 900px;
+  height: 130px;
+  border: 2px solid black;
+}
+
+.text-item {
+  display: inline-block; /* Afficher les textes sur la même ligne */
+  margin-right: 50px; /* Espacement entre les textes */
+  font-size: 18px;
+}
+
+.capitaine-color {
+	display: inline-block; /* Afficher les textes sur la même ligne */
+	margin-right: 50px; /* Espacement entre les textes */
+	font-size: 20px;
+	color : blue;
+	font-weight: bold;
+}
