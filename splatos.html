@@ -130,15 +130,19 @@
 
 <canvas id="monGraphique" width="400" height="200"></canvas>
 
+<canvas id="monGraphique" width="400" height="200"></canvas>
+
 <script>
   // Obtenez le contexte du canvas
   var ctx = document.getElementById('monGraphique').getContext('2d');
 
   // Les données de votre graphique
-  var armes = ['Dynamo Rouleau'];
+  var armes = ['Dynamo rouleau'];
   var utilisations = [20];
 
-var couleurFond = 'rgba(200, 200, 200, 0.2)';
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(200, 200, 200, 0.2)';
+
   // Créez le graphique en barres
   var monGraphique = new Chart(ctx, {
     type: 'bar',
@@ -147,10 +151,10 @@ var couleurFond = 'rgba(200, 200, 200, 0.2)';
       datasets: [{
         label: 'Utilisations',
         data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
-        backgroundColor: 'rgba(255, 99, 132, 1)', // Couleur de remplissage des barres avec une opacité réduite
+        backgroundColor: 'rgba(255, 99, 132, 0.5)', // Couleur de remplissage des barres avec une opacité réduite
         borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
         borderWidth: 1, // Largeur des bordures des barres
-        barPercentage: 0.4, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+	barPercentage: 0.6, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
         categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
       }]
     },
@@ -167,8 +171,8 @@ var couleurFond = 'rgba(200, 200, 200, 0.2)';
       },
       layout: {
         padding: 20 // Espacement autour du graphique pour mettre en valeur le background
-      }
-	    // Ajouter le fond de couleur pour le graphique
+      },
+      // Ajouter le fond de couleur pour le graphique
       elements: {
         bar: {
           backgroundColor: couleurFond
