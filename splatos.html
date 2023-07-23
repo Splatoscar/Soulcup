@@ -4,6 +4,7 @@
 	<link rel="icon" href="image/soul_cup_png.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<meta charset="UTF-8">
 </head>
 <body onload="sortByScoreAndDifference()">
@@ -125,5 +126,37 @@
 			</div>
 		</div>
 	</div>
+	<canvas id="monGraphique" width="400" height="200"></canvas>
+
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+  var armes = ['Dynamo rouleau'];
+  var utilisations = [20];
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Utilisations',
+        data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.2)', // Couleur de remplissage des barres
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1 // Largeur des bordures des barres
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true // Débuter l'axe des ordonnées à 0
+        }
+      }
+    }
+  });
+</script>
 </main>
 </html>
