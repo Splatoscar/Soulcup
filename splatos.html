@@ -128,13 +128,15 @@
 	</div>
 	<canvas id="monGraphique" width="400" height="200"></canvas>
 
+<canvas id="monGraphique" width="400" height="200"></canvas>
+
 <script>
   // Obtenez le contexte du canvas
   var ctx = document.getElementById('monGraphique').getContext('2d');
 
   // Les données de votre graphique
-  var armes = ['Dynamo rouleau'];
-  var utilisations = [20];
+  var armes = ['Arme 1', 'Arme 2', 'Arme 3', 'Arme 4', 'Arme 5'];
+  var utilisations = [20, 12, 30, 18, 25];
 
   // Créez le graphique en barres
   var monGraphique = new Chart(ctx, {
@@ -144,9 +146,11 @@
       datasets: [{
         label: 'Utilisations',
         data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
-        backgroundColor: 'rgba(255, 99, 132, 0.2)', // Couleur de remplissage des barres
+        backgroundColor: 'rgba(255, 99, 132, 0.5)', // Couleur de remplissage des barres avec une opacité réduite
         borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
-        borderWidth: 1 // Largeur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+        barPercentage: 0.6, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
       }]
     },
     options: {
@@ -154,6 +158,14 @@
         y: {
           beginAtZero: true // Débuter l'axe des ordonnées à 0
         }
+      },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 20 // Espacement autour du graphique pour mettre en valeur le background
       }
     }
   });
