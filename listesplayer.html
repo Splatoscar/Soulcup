@@ -4,20 +4,6 @@
 	<link rel="icon" href="image/soul_cup_png.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
-	<script>
-document.getElementById("recherche").addEventListener("input", function() {
-  var recherche = this.value.toLowerCase();
-  var pseudos = document.getElementById("pseudos").getElementsByTagName("a");
-
-  for (var i = 0; i < pseudos.length; i++) {
-    var pseudo = pseudos[i].innerText.toLowerCase();
-    if (pseudo.indexOf(recherche) > -1) {
-      pseudos[i].style.display = "block";
-    } else {
-      pseudos[i].style.display = "none";
-    }
-  }
-</script>
 	<meta charset="UTF-8">
 </head>
 <body onload="sortByScoreAndDifference()">
@@ -42,13 +28,13 @@ document.getElementById("recherche").addEventListener("input", function() {
   <p>Retrouvez tout les joueurs ayant participés à une compétition Soul Cup.</p>
 </div>
 <div class="container">
-<input type="text" id="recherche" placeholder="Rechercher un pseudo...">
-<br>
-<div id="pseudos">
-  <a href="lien-vers-page-personnelle-1">Splatos</a> <br>
-  <a href="lien-vers-page-personnelle-2">Nathendo</a> <br>
-  <a href="lien-vers-page-personnelle-3">Emi</a> <br>
-  <a href="lien-vers-page-personnelle-4">Yoshi</a> <br>
+<table class"table>
+	<tr>
+  	<td><a href="lien-vers-page-personnelle-1">Splatos</a></td>
+  	<td></td><a href="lien-vers-page-personnelle-2">Nathendo</a></td>
+  	<td></td><a href="lien-vers-page-personnelle-3">Emi</a></td>
+  	<td></td><a href="lien-vers-page-personnelle-4">Yoshi</a></td>
+	</tr>
   <!-- Ajoutez d'autres pseudos ici -->
-</div>
+</table>
 </div>
