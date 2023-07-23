@@ -66,3 +66,17 @@ function sortByScoreAndDifference() {
       tbody.appendChild(row);
     });
   }
+
+document.getElementById("recherche").addEventListener("input", function() {
+  var recherche = this.value.toLowerCase();
+  var pseudos = document.getElementById("pseudos").getElementsByTagName("a");
+
+  for (var i = 0; i < pseudos.length; i++) {
+    var pseudo = pseudos[i].innerText.toLowerCase();
+    if (pseudo.indexOf(recherche) > -1) {
+      pseudos[i].style.display = "block";
+    } else {
+      pseudos[i].style.display = "none";
+    }
+  }
+});
