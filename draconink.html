@@ -72,7 +72,7 @@
 		<table>
 			<thead>
 				<tr>
-					<th style="center;">Statistiques</th>
+					<th style="center;">Statistiques Générales</th>
 				</tr>
 				<tr>
 					<th>Joueur</th>
@@ -149,5 +149,318 @@
 			</tbody>
 		</table>
 	</div>
+	<br>
+	<br>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th style="center;">Pourcentages</th>
+				</tr>
+				<tr>
+					<th>Joueur</th>
+					<th>Participation</th>
+					<th>Manches Gagnées</th>
+					<th>Manches Perdues</th>
+					<th>Kills</th>
+					<th>Assists</th>
+					<th>Morts</th>
+					<th>Points d'Encrages</th>
+					<th>Armes Spéciales</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Karmabi</td>
+					<td>95.8%</td>
+					<td>78.3%</td>
+					<td>21.7%</td>
+					<td>18.5%</td>
+					<td>25.6%</td>
+					<td>17.7%</td>
+					<td>29.2%</td>
+					<td>31.7%</td>
+				</tr>
+				<tr>
+					<td>Jin-Lue</td>
+					<td>100%</td>
+					<td>75%</td>
+					<td>25%</td>
+					<td>26.2%</td>
+					<td>24.4%</td>
+					<td>36.7%</td>
+					<td>23.1%</td>
+					<td>13.7%</td>
+				</tr>
+				<tr>
+					<td>Djidow</td>
+					<td>91.7%</td>
+					<td>72.7%td>
+					<td>27.3%</td>
+					<td>24.8%</td>
+					<td>18.3%</td>
+					<td>20.5%</td>
+					<td>19.4%</td>
+					<td>25.2%</td>
+				</tr>
+				<tr>
+					<td>NoeDX</td>
+					<td>62.5%</td>
+					<td>86.7%</td>
+					<td>13.3%</td>
+					<td>14.8%</td>
+					<td>20.6%</td>
+					<td>8.4%</td>
+					<td>14.8%</td>
+					<td>16.4%</td>
+				</tr>
+				<tr>
+					<td>Mirval</td>
+					<td>50%</td>
+					<td>58.3%</td>
+					<td>41.7%</td>
+					<td>15.6%</td>
+					<td>11.1%</td>
+					<td>16.7%</td>
+					<td>13.6%</td>
+					<td>13%</td>
+				</tr>
+				<tr>
+					<td style="color: #FFD700;"><strong>Draconink spirits</strong></td>
+					<td>100%</td>
+					<td>75%</td>
+					<td>25%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th style="center;">Moyennes</th>
+				</tr>
+				<tr>
+					<th>Joueur</th>
+					<th>Kills</th>
+					<th>Assists</th>
+					<th>Morts</th>
+					<th>Points d'Encrages</th>
+					<th>Armes Spéciales</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Karmabi</td>
+					<td>5.78</td>
+					<td>2</td>
+					<td>3.3</td>
+					<td>1177.17</td>
+					<td>3.6</td>
+				</tr>
+				<tr>
+					<td>Jin-Lue</td>
+					<td>7.83</td>
+					<td>1.83</td>
+					<td>6.58</td>
+					<td>891.04</td>
+					<td>1.5</td>
+				</tr>
+				<tr>
+					<td>Djidow</td>
+					<td>8.1</td>
+					<td>1.5</td>
+					<td>4</td>
+					<td>818</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>NoeDX</td>
+					<td>7.07</td>
+					<td>2.47</td>
+					<td>2.4</td>
+					<td>913.73</td>
+					<td>2.87</td>
+				</tr>
+				<tr>
+					<td>Mirval</td>
+					<td>9.33</td>
+					<td>1.67</td>
+					<td>6</td>
+					<td>1050.75</td>
+					<td>2.83</td>
+				</tr>
+				<tr>
+					<td style="color: #FFD700;"><strong>Draconink spirits</strong></td>
+					<td>29.88</td>
+					<td>7.5</td>
+					<td>17.92</td>
+					<td>3 865.46</td>
+					<td>10.92</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<div class="container">
+				<h4>Armes principales utilisées cette saison</h4>
+	</div>
+	<br>
+	<div class="graphique-container">
+	<canvas id="monGraphique" width="200" height="100"></canvas>
+</div>
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+  var armes = ['Aérogun premium', 'Coralux 450', 'Marqueur lourd néo', 'Epinceau brosse', 'Eclablaster', 'Extraceur +', 'Liquidateur Jr.', 'Turboblaster', 'Double moucheteur nuancé', 'Badigeonneur stylo', 'Double nettoyeur', 'Calibre 3000', 'Eclatana doto chic', "Eclatana d'estampe", "Double moucheteur", "Eclablaster XL", "Proxiblaster néo", "Badigeonneur XS griffé", "Double Kelvin 525"];
+  var utilisations = [6,1,1,23,9,5,10,2,2,9,5,1,2,10,1,4,1,2,2];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Nombres',
+        data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
+<br>
+	<div class="container">
+				<h4>Armes spéciales utilisées cette saison</h4>
+	</div>
+	<br>
+	<div class="graphique-container">
+	<canvas id="monGraphique" width="200" height="100"></canvas>
+</div>
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+  var armes = ["Jolisator", "Super-molusque", "Super bouclier", "Sonar Paf", "Trimissile tornade", "Cavalsquade", "Chromo-Jet", "Aspirencre", "Multi-missiles", "Distri-cool", "Ultra-Tamponneur"];
+  var utilisations = [44,66,61,37,8,5,28,3,4,2,4];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Nombres',
+        data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
 </main>
 </html>
