@@ -460,5 +460,168 @@
     }
   });
 </script>
+	<div class="container">
+				<h4>Kills/Assits/Morts</h4>
+	</div>
+	<br>
+<canvas id="monGraphique" width="300" height="200"></canvas>
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+  var joueur = ["Karmabi", "Djidow", "NoeDX", "Jin-Lue", "Mirval"];
+  var kills = [133,178,106,188,112];
+  var assists = [46,33,37,44,20];
+  var morts = [76,88,36,158,72];
+
+  // Créez le graphique en barres groupées
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: joueur, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Kills',
+        data: kills, // Le nombre de kills sur l'axe des ordonnées pour chaque arme
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres pour les kills
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres pour les kills
+        borderWidth: 1, // Largeur des bordures des barres pour les kills
+        barPercentage: 0.2, // Pourcentage de largeur des barres pour les kills (20% de la largeur disponible)
+        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les kills (33% de la largeur disponible)
+      }, {
+        label: 'Assists',
+        data: assists, // Le nombre d'assists sur l'axe des ordonnées pour chaque arme
+        backgroundColor: 'rgba(54, 162, 235, 0.7)', // Couleur de remplissage des barres pour les assists
+        borderColor: 'rgba(54, 162, 235, 1)', // Couleur des bordures des barres pour les assists
+        borderWidth: 1, // Largeur des bordures des barres pour les assists
+        barPercentage: 0.2, // Pourcentage de largeur des barres pour les assists (20% de la largeur disponible)
+        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les assists (33% de la largeur disponible)
+      }, {
+        label: 'Morts',
+        data: morts, // Le nombre de morts sur l'axe des ordonnées pour chaque arme
+        backgroundColor: 'rgba(75, 192, 192, 0.7)', // Couleur de remplissage des barres pour les morts
+        borderColor: 'rgba(75, 192, 192, 1)', // Couleur des bordures des barres pour les morts
+        borderWidth: 1, // Largeur des bordures des barres pour les morts
+        barPercentage: 0.2, // Pourcentage de largeur des barres pour les morts (20% de la largeur disponible)
+        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les morts (33% de la largeur disponible)
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true, // Débuter l'axe des ordonnées à 0
+          ticks: {
+            font: {
+              size: 12, // Taille de la police pour les chiffres des ordonnées
+              family: 'Arial', // Police pour les chiffres des ordonnées
+              weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+            },
+            color: '#000000' // Couleur des chiffres des ordonnées en hexadécimal
+          }
+        },
+        x: {
+          ticks: {
+            font: {
+              size: 12, // Taille de la police pour les chiffres des abscisses
+              family: 'Arial', // Police pour les chiffres des abscisses
+              weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+            },
+            color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          display: true // Afficher la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 40 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
+<div class="container">
+				<h4>Encrages</h4>
+	</div>
+	<br>
+
+	<canvas id="monGraphique" width="200" height="100"></canvas>
+
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+  var joueur = ["Karmabi", "Djidow", "NoeDX", "Jin-Lue", "Mirval"];
+  var encrage = [27075,17996,13706,21385,12609];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'p.',
+        data: encrage, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
 </main>
 </html>
