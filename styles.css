@@ -84,8 +84,12 @@ h2 {
   margin-bottom: 1px ;
 }
 
+.nomequipe {
+    font-size: 20px;
+  }
+
 p {
-  font-size: 20px; /* Ajustez la valeur selon vos besoins */
+  font-size: 17px; /* Ajustez la valeur selon vos besoins */
 }
 
 .box {
