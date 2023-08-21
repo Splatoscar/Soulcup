@@ -145,8 +145,8 @@ tbody tr:nth-child(odd) {
 }
 
 caption {
-	font-size: 100px; /* Ajustez la valeur selon vos besoins */
-	text-shadow: 32px 32px 64px rgba(200, 123, 243, 1), -32px -32px 64px rgba(106, 13, 173, 1);
+	font-size: 70px; /* Ajustez la valeur selon vos besoins */
+	text-shadow: 16px 16px 32px rgba(200, 123, 243, 1), -16px -16px 32px rgba(106, 13, 173, 1);
 	color : white ;
 	margin-bottom: 0px ;
 	margin: 0;
