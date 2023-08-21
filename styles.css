@@ -120,7 +120,7 @@ tbody tr:nth-child(odd) {
 }
 
 .image-colonne {
-  width: 60px; /* Définissez la largeur souhaitée pour les images */
+  width: 50px; /* Définissez la largeur souhaitée pour les images */
   height: auto; /* Permet de conserver les proportions d'origine de l'image */
 }
 
