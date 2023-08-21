@@ -19,8 +19,8 @@ body {
 }
 
 body {
-	background: rgb(128,0,0);
-	background: linear-gradient(90deg, rgba(128,0,0,1) 0%, rgba(161,0,75,1) 50%, rgba(161,0,75,1) 100%);
+background: rgb(128,0,0);
+background: linear-gradient(90deg, rgba(128,0,0,1) 0%, rgba(161,0,75,1) 50%, rgba(161,0,75,1) 100%);
 }
 body {
 	padding-top: 70px;
