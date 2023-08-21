@@ -4,6 +4,7 @@
 	<link rel="icon" href="image/logo_equipes/Mist_ink_Theory_Abyss.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<meta charset="UTF-8">
 </head>
 <body onload="sortByScoreAndDifference()">
@@ -60,6 +61,9 @@
 				<a href="s1.html" style="font-size: 25px; text-decoration: none; color: black;">Saison 1</a>
 			</div>
 			<div class="container">
+				<p><bold>Saison 1 - Division 3 : </bold></p> <p  style="color: #CD7F32;"><bold> 3e</bold></p>
+			</div>
+			<div class="container">
 				<h5 style="margin-bottom: 0px;">Soul Cup</h5>
 			</div>
 			<div class="container">
@@ -91,13 +95,13 @@
 			<tbody>
 				<tr>
 					<td>Raellik</td>
-					<td>9</td>
-					<td>9</td>
+					<td>14</td>
+					<td>10</td>
+					<td>217</td>
+					<td>36</td>
 					<td>154</td>
-					<td>28</td>
-					<td>110</td>
-					<td>17 539</td>
-					<td>50</td>
+					<td>23 752</td>
+					<td>66</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -113,25 +117,25 @@
 				</tr>
 				<tr>
 					<td>Nicolas</td>
-					<td>7</td>
-					<td>7</td>
-					<td>150</td>
-					<td>30</td>
-					<td>88</td>
-					<td>9825</td>
-					<td>26</td>
+					<td>12</td>
+					<td>8</td>
+					<td>223</td>
+					<td>42</td>
+					<td>126</td>
+					<td>14 268</td>
+					<td>35</td>
 					<td></td>
 				</tr>
 				<tr>
 					<td>Némésis</td>
-					<td>9</td>
+					<td>11</td>
 					<td>6</td>
-					<td>102</td>
-					<td>34</td>
-					<td>74</td>
-					<td>15 178</td>
-					<td>50</td>
-					<td></td>
+					<td>119</td>
+					<td>42</td>
+					<td>87</td>
+					<td>17 652</td>
+					<td>57</td>
+					<td>1</td>
 				</tr>
 				<tr>
 					<td>SCP_Guy</td>
@@ -146,38 +150,550 @@
 				</tr>
 				<tr>
 					<td>SpeedW</td>
-					<td>6</td>
-					<td>6</td>
-					<td>51</td>
-					<td>15</td>
-					<td>68</td>
-					<td>12 270</td>
-					<td>36</td>
+					<td>10</td>
+					<td>7</td>
+					<td>82</td>
+					<td>23</td>
+					<td>100</td>
+					<td>17 211</td>
+					<td>53</td>
 					<td></td>
 				</tr>
 				<tr>
 					<td>Aliyah</td>
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-					<td></td>
+					<td>4</td>
+					<td>1</td>
+					<td>32</td>
+					<td>11</td>
+					<td>36</td>
+					<td>3 953</td>
+					<td>9</td>
+					<td>1</td>
 				</tr>
 				<tr>
 					<td style="color: #FFD700;"><strong>Mist'ink Theory Abyss</strong></td>
-					<td>9</td>
-					<td>9</td>
-					<td>527</td>
-					<td>140</td>
-					<td>401</td>
-					<td>72 348</td>
-					<td>214</td>
+					<td>14</td>
+					<td>10</td>
+					<td>743</td>
+					<td>187</td>
+					<td>564</td>
+					<td>94 372</td>
+					<td>272</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+	<br>
+	<br>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th style="center;">Pourcentages</th>
+				</tr>
+				<tr>
+					<th>Joueur</th>
+					<th>Participation</th>
+					<th>Manches Gagnées</th>
+					<th>Manches Perdues</th>
+					<th>Kills</th>
+					<th>Assists</th>
+					<th>Morts</th>
+					<th>Points d'Encrages</th>
+					<th>Armes Spéciales</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Raellik</td>
+					<td>100%</td>
+					<td>58.3%</td>
+					<td>41.7%</td>
+					<td>29.2%</td>
+					<td>19.6%</td>
+					<td>27.3%</td>
+					<td>25.2%</td>
+					<td>24.3%</td>
+				</tr>
+				<tr>
+					<td>Oqagiri</td>
+					<td>0%</td>
+					<td>0%</td>
+					<td>0%</td>
+					<td>0%</td>
+					<td>0%</td>
+					<td>0%</td>
+					<td>0%</td>
+					<td>0%</td>
+				</tr>
+				<tr>
+					<td>Nicolas</td>
+					<td>83.3%</td>
+					<td>60%</td>
+					<td>40%</td>
+					<td>30%</td>
+					<td>22.5%</td>
+					<td>22.3%</td>
+					<td>15.1%</td>
+					<td>12.9%</td>
+				</tr>
+				<tr>
+					<td>Némésis</td>
+					<td>70.8%</td>
+					<td>64.7%</td>
+					<td>35.3%</td>
+					<td>16%</td>
+					<td>22.5%</td>
+					<td>15.4%</td>
+					<td>18.7%</td>
+					<td>21%</td>
+				</tr>
+				<tr>
+					<td>SCP_Guy</td>
+					<td>54.2%</td>
+					<td>30.8%</td>
+					<td>69.2%</td>
+					<td>9.4%</td>
+					<td>17.6%</td>
+					<td>10.8%</td>
+					<td>18.6%</td>
+					<td>19.1%</td>
+				</tr>
+				<tr>
+					<td>SpeedW</td>
+					<td>70.8%</td>
+					<td>58.8%</td>
+					<td>41.2%</td>
+					<td>11%</td>
+					<td>12.3%</td>
+					<td>17.7%</td>
+					<td>18.2%</td>
+					<td>19.5%</td>
+				</tr>
+				<tr>
+					<td>Aliyah</td>
+					<td>20.8%</td>
+					<td>80%</td>
+					<td>20%</td>
+					<td>4.3%</td>
+					<td>5.9%</td>
+					<td>6.4%</td>
+					<td>4.2%</td>
+					<td>3.3%</td>
+				</tr>
+				<tr>
+					<td style="color: #FFD700;"><strong>Mist'ink Theory Abyss</strong></td>
+					<td>100%</td>
+					<td>58.3%</td>
+					<td>41.7%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+					<td>100%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<br>
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th style="center;">Moyennes</th>
+				</tr>
+				<tr>
+					<th>Joueur</th>
+					<th>Kills</th>
+					<th>Assists</th>
+					<th>Morts</th>
+					<th>Points d'Encrages</th>
+					<th>Armes Spéciales</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Raellik</td>
+					<td>9.04</td>
+					<td>1.5</td>
+					<td>6.42</td>
+					<td>989.67</td>
+					<td>2.75</td>
+				</tr>
+				<tr>
+					<td>Oqagiri</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Nicolas</td>
+					<td>11.15</td>
+					<td>2.1</td>
+					<td>6.3</td>
+					<td>713.4</td>
+					<td>1.75</td>
+				</tr>
+				<tr>
+					<td>Némésis</td>
+					<td>7</td>
+					<td>2.47</td>
+					<td>5.12</td>
+					<td>1 038.35</td>
+					<td>3.35</td>
+				</tr>
+				<tr>
+					<td>SCP_Guy</td>
+					<td>5.38</td>
+					<td>2.54</td>
+					<td>4.69</td>
+					<td>1 348.92</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>SpeedW</td>
+					<td>4.82</td>
+					<td>1.35</td>
+					<td>5.88</td>
+					<td>1 012.41</td>
+					<td>3.12</td>
+				</tr>
+				<tr>
+					<td>Aliyah</td>
+					<td>6.4</td>
+					<td>2.2</td>
+					<td>7.2</td>
+					<td>790.6</td>
+					<td>1.8</td>
+				</tr>
+				<tr>
+					<td style="color: #FFD700;"><strong>Mist'ink Theory Abyss</strong></td>
+					<td>30.86</td>
+					<td>7.79</td>
+					<td>23.5</td>
+					<td>3 932</td>
+					<td>11.33</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<br>
+	<div class="container">
+				<h4>Armes principales utilisées cette saison</h4>
+	</div>
+	<br>
+	<canvas id="monGraphique" width="200" height="100"></canvas>
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+  var armes = ["Détoneur", "Marqueur léger", "Epinceau brosse", "Double mouchetteur nuancé", "Epinceau écaïe", "Double voltigeur blanc", "Flexi-rouleau", "Seauceur", "Concentraceur", "N-Zap 85", "Liquidateur Jr.", "Eclatana doto", "Liquidateur Sr.", "Liquidateur", "Badigeonneur Stylo"];
+  var utilisations = [12,8,5,21,15,2,1,1,2,6,11,3,3,5,1];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Nombres',
+        data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
+<br>
+	<div class="container">
+				<h4>Armes spéciales utilisées cette saison</h4>
+	</div>
+	<br>
+
+	<canvas id="monGraphique2" width="200" height="100"></canvas>
+
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique2').getContext('2d');
+
+  // Les données de votre graphique
+  var armes = ["Pluie d'encre", "Crabe d'assaut", "Super molusque", "Cavalsquad", "Sonar Paf", "Multi-missiles", "Trimissile tornade", "Aspirencre", "Distri-Cool", "Super bouclier", "Ultra-tamponneur", "Lance raffale", "Chromo-Jet"];
+  var utilisations = [47,21,9,57,39,3,5,7,26,38,7,9,4];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Nombres',
+        data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
+	<div class="container">
+				<h4>Kills/Assits/Morts</h4>
+	</div>
+	<br>
+<canvas id="monGraphique3" width="300" height="200"></canvas>
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique3').getContext('2d');
+
+  // Les données de votre graphique
+  var joueur = ["SCP_Guy", "Némésis", "Nicolas", "Raellik", "SpeedW", "Aliyah"];
+  var kills = [70,119,223,217,82,32];
+  var assists = [33,42,42,36,23,11];
+  var morts = [61,87,126,154,100,36];
+
+  // Créez le graphique en barres groupées
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: joueur, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Kills',
+        data: kills, // Le nombre de kills sur l'axe des ordonnées pour chaque arme
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres pour les kills
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres pour les kills
+        borderWidth: 1, // Largeur des bordures des barres pour les kills
+        barPercentage: 0.2, // Pourcentage de largeur des barres pour les kills (20% de la largeur disponible)
+        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les kills (33% de la largeur disponible)
+      }, {
+        label: 'Assists',
+        data: assists, // Le nombre d'assists sur l'axe des ordonnées pour chaque arme
+        backgroundColor: 'rgba(54, 162, 235, 0.7)', // Couleur de remplissage des barres pour les assists
+        borderColor: 'rgba(54, 162, 235, 1)', // Couleur des bordures des barres pour les assists
+        borderWidth: 1, // Largeur des bordures des barres pour les assists
+        barPercentage: 0.2, // Pourcentage de largeur des barres pour les assists (20% de la largeur disponible)
+        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les assists (33% de la largeur disponible)
+      }, {
+        label: 'Morts',
+        data: morts, // Le nombre de morts sur l'axe des ordonnées pour chaque arme
+        backgroundColor: 'rgba(75, 192, 192, 0.7)', // Couleur de remplissage des barres pour les morts
+        borderColor: 'rgba(75, 192, 192, 1)', // Couleur des bordures des barres pour les morts
+        borderWidth: 1, // Largeur des bordures des barres pour les morts
+        barPercentage: 0.2, // Pourcentage de largeur des barres pour les morts (20% de la largeur disponible)
+        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les morts (33% de la largeur disponible)
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true, // Débuter l'axe des ordonnées à 0
+          ticks: {
+            font: {
+              size: 12, // Taille de la police pour les chiffres des ordonnées
+              family: 'Arial', // Police pour les chiffres des ordonnées
+              weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+            },
+            color: '#000000' // Couleur des chiffres des ordonnées en hexadécimal
+          }
+        },
+        x: {
+          ticks: {
+            font: {
+              size: 12, // Taille de la police pour les chiffres des abscisses
+              family: 'Arial', // Police pour les chiffres des abscisses
+              weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+            },
+            color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          display: true // Afficher la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 40 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
+<div class="container">
+				<h4>Encrages</h4>
+	</div>
+	<br>
+
+	<canvas id="monGraphique4" width="200" height="100"></canvas>
+
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique4').getContext('2d');
+
+  // Les données de votre graphique
+  var joueur = ["SCP_Guy", "Némésis", "Nicolas", "Raellik", "SpeedW", "Aliyah"];
+  var encrage = [17536,17652,14268,23752,17211,3953];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: joueur, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'p.',
+        data: encrage, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
 </main>
 </html>
