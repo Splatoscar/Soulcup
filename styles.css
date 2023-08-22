@@ -13,6 +13,17 @@ body {
   align-items: center;
   text-align: center;
 }
+/* Style pour la victoire */
+.victoire {
+  color: green;
+  font-weight: bold;
+}
+
+/* Style pour la défaite */
+.defaite {
+  color: red;
+  font-weight: bold;
+}
 
 .container p {
   text-align: center;
