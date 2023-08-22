@@ -235,6 +235,11 @@ h5 {
 	font-weight: bold;
 }
 
+.borderedImage {
+      border: 4px solid #000; /* Couleur et largeur de la bordure */
+      max-width: 40%; /* Largeur maximale de l'image */
+    }
+
 #monGraphique {
   background-color: rgba(221, 160, 221, 0.7);
 }
