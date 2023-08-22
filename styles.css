@@ -121,8 +121,19 @@ table {
   margin-right : 50px;
 }
 
+.custom-table {
+      width: 500px; /* Changer cette valeur selon votre besoin */
+      margin: 0 auto; /* Centrer le tableau horizontalement */
+      border-collapse: collapse;
+      border: 3px solid black;
+ border-collapse: collapse; /* Fusionne les bordures des cellules */
+  background-color: #f2f2f2; /* Définit la couleur de fond du tableau */
+ margin-left : 80px;
+  margin-right : 80px;
+    }
+
 th, td {
-  padding: 10px; /* Ajoute un espace intérieur de 10 pixels aux cellules */
+  padding: 5px; /* Ajoute un espace intérieur de 10 pixels aux cellules */
   text-align: center; /* Centre le contenu des cellules */
 }
 
