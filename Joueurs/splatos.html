@@ -483,7 +483,7 @@
 			</div>
 	<br>
 	<div class="container">
-				<h4>Progression</h4>
+				<h4>Progression par points gagnées</h4>
 	</div>
 	<br>
 	<canvas id="monGraphique5" width="200" height="100"></canvas>
@@ -493,7 +493,7 @@
 
   // Les données de votre graphique
 var tournois = ["Tournoi 1", "Tournoi 2", "Tournoi 3"]; // Noms des tournois
-    var resultats = [2, 5, 1]; // Résultats du joueur pour chaque tournoi
+    var resultats = [10, 5, 30]; // Résultats du joueur pour chaque tournoi
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
@@ -504,7 +504,7 @@ var tournois = ["Tournoi 1", "Tournoi 2", "Tournoi 3"]; // Noms des tournois
       data: {
         labels: tournois,
         datasets: [{
-          label: 'Résultats du Joueur',
+          label: 'Points gagnées',
           data: resultats,
           borderColor: 'rgba(75, 192, 192, 1)', // Couleur de la ligne
           borderWidth: 2,
