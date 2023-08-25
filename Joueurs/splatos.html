@@ -515,19 +515,14 @@ var tournois = ["Tournoi 1", "Tournoi 2", "Tournoi 3"]; // Noms des tournois
         }]
       },
     options: {
-    scales: {
-      y: {
-        beginAtZero: true, // Débuter l'axe des ordonnées à 0
-        ticks: {
-          font: {
-            size: 12, // Taille de la police pour les chiffres des ordonnées
-            family: 'Arial', // Police pour les chiffres des ordonnées
-            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
-          },
-          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
-          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
-        }
-      },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 10, // Ajustez la plage des valeurs en fonction de vos données
+            ticks: {
+              stepSize: 1 // Échelle des valeurs sur l'axe des ordonnées
+            }
+          }
       x: {
         ticks: {
           font: {
