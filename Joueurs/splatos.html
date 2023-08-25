@@ -164,23 +164,19 @@
 			</div>
 	<br>
 	<br>
-		<div class="container">
-			<h4>Soul League - Saison 1</h4>
-		</div>
-	
-<div class="container">
-				<h4>Armes principales utilisées</h4>
+		<br>
+	<div class="container">
+				<h4>Armes principales utilisées cette saison</h4>
 	</div>
 	<br>
-<div class="container">	
 	<canvas id="monGraphique" width="200" height="100"></canvas>
 <script>
   // Obtenez le contexte du canvas
   var ctx = document.getElementById('monGraphique').getContext('2d');
 
   // Les données de votre graphique
-  var armes = ["Dynamo-Rouleau"];
-  var utilisations = [19];
+  var armes = ["Coralux 450", "N-Zap 85", "Exteinteur", "Dynamo Rouleau", "Marqueur léger", "Calibre 2000", "Lanceur héroïque", "Marqueur léger néo", "Compresseur", "Turboblaster", "Concentraceur E+F", "Seauceur", "Encrifugeur", "Double nettoyeur modifié", "Dépoteur nuancé", "Détoneur", "Badigeonneur Stylo", "Calibre 3000 chic", "Aérogun premium", "Décap'express Alpha"];
+  var utilisations = [2,12,17,19,8,2,1,7,1,2,1,3,1,1,1,1,2,1,1,1];
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
@@ -243,13 +239,12 @@
     }
   });
 </script>
-</div>
 <br>
 	<div class="container">
-				<h4>Armes spéciales utilisées</h4>
+				<h4>Armes spéciales utilisées cette saison</h4>
 	</div>
 	<br>
-<div class="container">
+
 	<canvas id="monGraphique2" width="200" height="100"></canvas>
 
 <script>
@@ -257,8 +252,8 @@
   var ctx = document.getElementById('monGraphique2').getContext('2d');
 
   // Les données de votre graphique
-  var armes = ["Distri-Cool"];
-  var utilisations = [50];
+  var armes = ["Multi-missiles", "Distri-Cool", "Jolisator", "Crabe d'assaut", "Haut perceur 5.1", "Lance raffale", "Trimissile tornade", "Chromo-Jet", "Multi-leurres", "Pluie d'encre", "Kraken royal", "Super bouclier"];
+  var utilisations = [10,96,54,34,7,7,49,11,4,5,4,1];
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
@@ -321,22 +316,20 @@
     }
   });
 </script>
-</div>
 	<div class="container">
 				<h4>Kills/Assits/Morts</h4>
 	</div>
 	<br>
-<div class="container">
 <canvas id="monGraphique3" width="300" height="200"></canvas>
 <script>
   // Obtenez le contexte du canvas
   var ctx = document.getElementById('monGraphique3').getContext('2d');
 
   // Les données de votre graphique
-  var joueur = ["Saison 1"];
-  var kills = [179];
-  var assists = [33];
-  var morts = [153];
+  var joueur = ["Kaiitoo", "Vapor", "Inkurey", "Low", "Splatos", "Nelli", "Zeyga"];
+  var kills = [59,125,32,94,179,81,43];
+  var assists = [17,24,8,21,33,30,29];
+  var morts = [45,81,33,84,153,68,31];
 
   // Créez le graphique en barres groupées
   var monGraphique = new Chart(ctx, {
@@ -410,12 +403,11 @@
     }
   });
 </script>
-</div>
 <div class="container">
 				<h4>Encrages</h4>
 	</div>
 	<br>
-<div class="container">
+
 	<canvas id="monGraphique4" width="200" height="100"></canvas>
 
 <script>
@@ -423,8 +415,8 @@
   var ctx = document.getElementById('monGraphique4').getContext('2d');
 
   // Les données de votre graphique
-  var joueur = ["Saison 1"];
-  var encrage = [16 261];
+  var joueur = ["Kaiitoo", "Vapor", "Inkurey", "Low", "Splatos", "Nelli", "Zeyga"];
+  var encrage = [9749,14073,5964,16871,16261,12862,6337];
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
@@ -487,7 +479,6 @@
     }
   });
 </script>
-</div>
 	<br>
 	<br>
 		<div class="container">
