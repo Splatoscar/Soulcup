@@ -150,6 +150,11 @@ tbody tr:nth-child(odd) {
   height: auto; /* Permet de conserver les proportions d'origine de l'image */
 }
 
+.medaille {
+  width: 90px; /* Définissez la largeur souhaitée pour les images */
+  height: auto; /* Permet de conserver les proportions d'origine de l'image */
+}
+
 .image-colonne2 {
   width: 70px; /* Définissez la largeur souhaitée pour les images */
   height: auto; /* Permet de conserver les proportions d'origine de l'image */
