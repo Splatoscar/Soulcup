@@ -517,8 +517,8 @@ var tournois = ["Tournoi 1", "Tournoi 2", "Tournoi 3"]; // Noms des tournois
     options: {
         scales: {
           y: {
-            beginAtZero: true,
-            max: 10, // Ajustez la plage des valeurs en fonction de vos données
+	beginAtZero: true, // Débuter l'axe des ordonnées à 0
+            reverse: true // Inverser l'axe des ordonnées
             ticks: {
               stepSize: 1 // Échelle des valeurs sur l'axe des ordonnées
             }
