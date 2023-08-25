@@ -257,6 +257,9 @@ h5 {
 #monGraphique4 {
   background-color: rgba(221, 160, 221, 0.7);
 }
+#monGraphique5 {
+  background-color: rgba(221, 160, 221, 0.7);
+}
 .graphique-container {
   width: 60%; /* Ajustez la largeur selon vos besoins */
   margin: 0 auto; /* Centre le conteneur horizontalement */
