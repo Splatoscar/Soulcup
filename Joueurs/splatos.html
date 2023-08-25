@@ -161,7 +161,7 @@
 		</table>
 	</div>
 			<div class="container">
-				<h4>Graphiques</h4>
+				<h4>Soul League | Saison 1</h4>
 			</div>
 	<br>
 	<div class="container">
@@ -478,6 +478,84 @@
     }
   });
 </script>
-	
+<div class="container">
+				<h4>Soul Cup | Saison 2023-2024</h4>
+			</div>
+	<br>
+	<div class="container">
+				<h4>Armes principales utilisées cette saison</h4>
+	</div>
+	<br>
+	<canvas id="monGraphique" width="200" height="100"></canvas>
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique').getContext('2d');
+
+  // Les données de votre graphique
+var tournois = ["Tournoi 1", "Tournoi 2", "Tournoi 3"]; // Noms des tournois
+    var resultats = [2, 5, 1]; // Résultats du joueur pour chaque tournoi
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+ var monGraphique = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: tournois,
+        datasets: [{
+          label: 'Résultats du Joueur',
+          data: resultats,
+          borderColor: 'rgba(75, 192, 192, 1)', // Couleur de la ligne
+          borderWidth: 2,
+          fill: false, // Pour ne pas remplir l'aire sous la ligne
+          pointRadius: 6, // Taille des points
+          pointBackgroundColor: 'rgba(75, 192, 192, 1)', // Couleur des points
+          pointBorderColor: 'rgba(75, 192, 192, 1)' // Couleur de la bordure des points
+        }]
+      },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
 </main>
 </html>
