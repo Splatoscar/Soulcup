@@ -86,33 +86,23 @@
 			<tbody>
 				<tr>
 					<td>Globale</td>
-					<td>9</td>
-					<td>4</td>
-					<td>116</td>
-					<td>20</td>
-					<td>97</td>
-					<td>11 004</td>
-					<td>35</td>
-				</tr>
-				<tr>
-					<td>Pourcentages</td>
-					<td>%</td>
-					<td>%</td>
-					<td>%</td>
-					<td>%</td>
-					<td>%</td>
-					<td>%</td>
-					<td>%</td>
+					<td>11</td>
+					<td>8</td>
+					<td>179</td>
+					<td>33</td>
+					<td>153</td>
+					<td>16 261</td>
+					<td>50</td>
 				</tr>
 				<tr>
 					<td>Moyennes</td>
-					<td>9</td>
-					<td>4</td>
-					<td>116</td>
-					<td>20</td>
-					<td>97</td>
-					<td>11 004</td>
-					<td>35</td>
+					<td>~</td>
+					<td>~</td>
+					<td>9.42</td>
+					<td>1.74</td>
+					<td>8.05</td>
+					<td>855.84</td>
+					<td>2.63</td>
 				</tr>
 			</tbody>
 		</table>
@@ -174,8 +164,8 @@
   var ctx = document.getElementById('monGraphique').getContext('2d');
 
   // Les données de votre graphique
-  var armes = ["Coralux 450", "N-Zap 85", "Exteinteur", "Dynamo Rouleau", "Marqueur léger", "Calibre 2000", "Lanceur héroïque", "Marqueur léger néo", "Compresseur", "Turboblaster", "Concentraceur E+F", "Seauceur", "Encrifugeur", "Double nettoyeur modifié", "Dépoteur nuancé", "Détoneur", "Badigeonneur Stylo", "Calibre 3000 chic", "Aérogun premium", "Décap'express Alpha"];
-  var utilisations = [2,12,17,19,8,2,1,7,1,2,1,3,1,1,1,1,2,1,1,1];
+  var armes = ["Dynamo-Rouleau"];
+  var utilisations = [19];
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
@@ -251,8 +241,8 @@
   var ctx = document.getElementById('monGraphique2').getContext('2d');
 
   // Les données de votre graphique
-  var armes = ["Multi-missiles", "Distri-Cool", "Jolisator", "Crabe d'assaut", "Haut perceur 5.1", "Lance raffale", "Trimissile tornade", "Chromo-Jet", "Multi-leurres", "Pluie d'encre", "Kraken royal", "Super bouclier"];
-  var utilisations = [10,96,54,34,7,7,49,11,4,5,4,1];
+  var armes = ["Jolisator"];
+  var utilisations = [50];
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
@@ -325,10 +315,10 @@
   var ctx = document.getElementById('monGraphique3').getContext('2d');
 
   // Les données de votre graphique
-  var joueur = ["Kaiitoo", "Vapor", "Inkurey", "Low", "Splatos", "Nelli", "Zeyga"];
-  var kills = [59,125,32,94,179,81,43];
-  var assists = [17,24,8,21,33,30,29];
-  var morts = [45,81,33,84,153,68,31];
+  var joueur = ["Saison 1"];
+  var kills = [179];
+  var assists = [33];
+  var morts = [153];
 
   // Créez le graphique en barres groupées
   var monGraphique = new Chart(ctx, {
@@ -414,8 +404,8 @@
   var ctx = document.getElementById('monGraphique4').getContext('2d');
 
   // Les données de votre graphique
-  var joueur = ["Kaiitoo", "Vapor", "Inkurey", "Low", "Splatos", "Nelli", "Zeyga"];
-  var encrage = [9749,14073,5964,16871,16261,12862,6337];
+  var joueur = ["Saison 1"];
+  var encrage = [16261];
 
   // Couleur de fond pour le graphique (par exemple : gris)
   var couleurFond = 'rgba(135, 206, 250, 0.2)';
