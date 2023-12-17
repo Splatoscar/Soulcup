@@ -13,6 +13,18 @@ body {
   align-items: center;
   text-align: center;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin: 5px;
+}
+
 /* Style pour la victoire */
 .victoire {
   color: green;
