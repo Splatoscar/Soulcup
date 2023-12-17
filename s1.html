@@ -298,6 +298,78 @@ var utilisations = [17,14,58,6,23,8,3,15,48,26,5,20,1,10,50,57,10,38,2,6,8,23,49
   });
 </script>
 <br>
+<canvas id="monGraphique11" width="200" height="100"></canvas>
+
+<script>
+  // Obtenez le contexte du canvas
+  var ctx = document.getElementById('monGraphique11').getContext('2d');
+
+  // Les données de votre graphique
+ var armes2 = ["Concentraceur","Liquidateur Sr.", "Liquidateur", "Marqueur lourd néo", "Eclablaster", "Double nettoyeur", "Calibre 3000", "Eclatana d'estampe", "Double mouchetteur", "Eclablaster XL", "Badigeonneur XS griffé", "Double kelvin 525", "Liquidateur griffé", "Trisperceur", "Calibre 3000 chic", "Encrifugeur", "Double voltigeur noir", "Dynamo rouleau", "Double encreur", "Rouleau large Xpress", "Arroseur léger cétacé", "Badigeonneur chic", "Turboblaster chic", "Badigeonneur", "Dépoteur", "Arroseur léger", "Epinceau", "Para-encre XL", "Extraceur + zoom", "Bim Bam Boum MK I", "Rouleau carbone", "Nautilus 47", "Double mouchetteur", "Para-encre"];
+var utilisations2 = [53,4,19,20,24,24,27,4,3,12,8,3,8,1,10,4,1,2,1,3,5,1,5,118,6,27,196,76,32,265,432,316,197];
+
+  // Couleur de fond pour le graphique (par exemple : gris)
+  var couleurFond = 'rgba(135, 206, 250, 0.2)';
+
+  // Créez le graphique en barres
+  var monGraphique = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: armes, // Les noms des armes sur l'axe des abscisses
+      datasets: [{
+        label: 'Nombres',
+        data: utilisations, // Le nombre d'utilisations sur l'axe des ordonnées
+        backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres avec une opacité réduite
+        borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres
+        borderWidth: 1, // Largeur des bordures des barres
+	barPercentage: 0.3, // Pourcentage de largeur des barres (0.6 signifie 60% de la largeur disponible)
+        categoryPercentage: 0.8 // Pourcentage de largeur des groupes de barres (0.8 signifie 80% de la largeur disponible)
+      }]
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true, // Débuter l'axe des ordonnées à 0
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des ordonnées
+            family: 'Arial', // Police pour les chiffres des ordonnées
+            weight: 'bold' // Gras des chiffres des ordonnées (normal ou bold)
+          },
+          color: '#000000', // Couleur des chiffres des ordonnées en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      },
+      x: {
+        ticks: {
+          font: {
+            size: 12, // Taille de la police pour les chiffres des abscisses
+            family: 'Arial', // Police pour les chiffres des abscisses
+            weight: 'bold' // Gras des chiffres des abscisses (normal ou bold)
+          },
+          color: '#000000' // Couleur des chiffres des abscisses en hexadécimal
+          // Vous pouvez ajouter d'autres options de personnalisation ici, comme le style de la grille, etc.
+        }
+      }
+    },
+      plugins: {
+        legend: {
+          display: false // Masquer la légende (facultatif)
+        }
+      },
+      layout: {
+        padding: 60 // Espacement autour du graphique pour mettre en valeur le background
+      },
+      // Ajouter le fond de couleur pour le graphique
+      elements: {
+        bar: {
+          backgroundColor: couleurFond
+        }
+      }
+    }
+  });
+</script>
+<br>
 	<div class="container">
 				<h4 style="color : white;">Armes spéciales utilisées cette saison</h4>
 	</div>
