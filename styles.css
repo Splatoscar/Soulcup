@@ -43,8 +43,10 @@ body {
 }
 
 body {
-background: rgb(128,0,0);
-background: linear-gradient(90deg, rgba(128,0,0,1) 0%, rgba(161,0,75,1) 50%, rgba(161,0,75,1) 100%);
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
 }
 body {
 	padding-top: 70px;
