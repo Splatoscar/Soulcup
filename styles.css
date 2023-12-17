@@ -18,6 +18,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 .image-container img {
