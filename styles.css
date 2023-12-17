@@ -14,21 +14,6 @@ body {
   text-align: center;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('image/background.png');
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-}
 
 /* Style pour la victoire */
 .victoire {
@@ -47,7 +32,7 @@ body {
 }
 
 body {
-    background-image: url('image/background.png');
+    background-image: url('image/noir.jpg');
     background-size: cover;
     background-attachment: fixed;
     margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
