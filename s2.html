@@ -17,6 +17,15 @@
             width: 100%;
             background-color: red;
             transition: height 0.5s;
+            /* Ajout de la classe 'initial' pour déclencher l'animation au chargement */
+            animation: initial 0.1s forwards;
+        }
+
+        /* Animation initiale */
+        @keyframes initial {
+            to {
+                height: 7%; /* Changer la hauteur initiale ici */
+            }
         }
     </style>
 </head>
