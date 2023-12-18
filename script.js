@@ -82,15 +82,10 @@ updateTank();
 
 // Fonction pour changer la valeur du pourcentage
 function changePercentage() {
-  // Demander la nouvelle valeur (tu peux la changer selon tes besoins)
-  const newPercentage = prompt('Entrez la nouvelle valeur du pourcentage :');
-  
-  // Vérifier si la valeur est valide (entre 0 et 100)
-  if (!isNaN(newPercentage) && newPercentage >= 0 && newPercentage <= 100) {
-    // Mettre à jour la variable et la cuve
-    percentage = parseFloat(newPercentage);
+    // Change la valeur du pourcentage ici (par exemple, à 50%)
+    percentage = 50;
+
+    // Met à jour la cuve avec la nouvelle valeur
     updateTank();
-  } else {
-    alert('Veuillez entrer une valeur valide entre 0 et 100.');
-  }
 }
+
