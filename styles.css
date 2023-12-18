@@ -36,10 +36,16 @@ body {
     margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
 }
 
+.tank-container {
+  width: 200px;
+  margin: 0 auto; /* Pour centrer le conteneur */
+}
+
 .tank {
   position: relative;
-  width: 200px;
+  width: 100%;
   height: 300px;
+  max-width: 200px; /* Largeur maximale pour contrôler la position */
   background-color: #ddd;
 }
 
