@@ -3,10 +3,6 @@
   src: url('Splatfont2.ttf') format('truetype');
 }
 
-body {
-  font-family: 'Splatfont2', sans-serif;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -35,10 +31,10 @@ body {
     background-image: url('image/noir.jpg');
     background-size: cover;
     background-attachment: fixed;
-    margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
-}
-body {
+	font-family: 'Splatfont2', sans-serif;
+
 	padding-top: 70px;
+    margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
 }
 
 nav {
