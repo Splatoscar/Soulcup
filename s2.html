@@ -17,7 +17,10 @@
             width: 100%;
             background-color: red;
             transition: height 0.5s;
-            /* Ajout de la classe 'initial' pour déclencher l'animation au chargement */
+        }
+
+        /* Nouvelle classe pour l'animation initiale */
+        .initial {
             animation: initial 0.1s forwards;
         }
 
@@ -44,6 +47,12 @@
             const newHeight = percentage + '%';
             tank.style.height = newHeight;
         }
+
+        // Ajouter la classe 'initial' après le chargement de la page
+        window.addEventListener('load', function() {
+            const tank = document.getElementById('liquid');
+            tank.classList.add('initial');
+        });
 
         // Appeler la fonction d'initialisation
         updateTank();
