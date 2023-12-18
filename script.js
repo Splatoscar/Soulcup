@@ -68,7 +68,7 @@ function sortByScoreAndDifference() {
 }
 
 // Initialiser la valeur du pourcentage
-let percentage = 7;
+let percentage = 50; // Change la valeur du pourcentage comme tu le souhaites
 
 // Mettre à jour la cuve avec la nouvelle valeur
 function updateTank() {
@@ -79,13 +79,3 @@ function updateTank() {
 
 // Appeler la fonction d'initialisation
 updateTank();
-
-// Fonction pour changer la valeur du pourcentage
-function changePercentage() {
-    // Change la valeur du pourcentage ici (par exemple, à 50%)
-    percentage = 50;
-
-    // Met à jour la cuve avec la nouvelle valeur
-    updateTank();
-}
-
