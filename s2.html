@@ -1,10 +1,6 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title>Soul League : Saison 2</title>
-    <link rel="icon" href="image/soul_cup_png.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -25,37 +21,23 @@
     </style>
 </head>
 <body>
-	<br>
-	<br>
-	<br>
-	<a href="soulleague.html">
-		<img src="image/Palourde.png" alt="Description de l'image" style="width: 40px;" >
-	</a>
-	<header>
-		<div class="container">
-			<nav>
-				<ul>
-					<li><a href="division1.html">Division 1</a></li>
-					<li><a href="division2.html">Division 2</a></li>
-					<li><a href="division3.html">Division 3</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	  <div class="tank">
+    <div class="tank">
         <div class="liquid" id="liquid"></div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // Initialiser la valeur du pourcentage
+        let percentage = 7;
+
+        // Mettre à jour la cuve avec la nouvelle valeur
+        function updateTank() {
+            const tank = document.getElementById('liquid');
+            const newHeight = percentage + '%';
+            tank.style.height = newHeight;
+        }
+
+        // Appeler la fonction d'initialisation
+        updateTank();
+    </script>
 </body>
-<main>
-	<div class="container">
-        <h2 class="titre1">Saison 2</h2>
-	</div>
-	<br>
-	<div class="container">
-		<p class="paragraphe1">La Saison 1 de la Soul League regroupe 18 équipes et plus de 105 joueurs.<br>
-		Elle a débuté le 29 Mai 2023 et s'est terminée le 23 Juillet 2023.<br>
-		Retrouvez ci-dessous les 3 divisions de cette saison</p>
-	</div>
-</main>
 </html>
