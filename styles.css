@@ -36,24 +36,19 @@ body {
     margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
 }
 
-.tank-container {
-  width: 200px;
-  margin: 0 auto; /* Pour centrer le conteneur */
-}
-
 .tank {
   position: relative;
-  width: 100%;
+  width: 200px;
   height: 300px;
-  max-width: 200px; /* Largeur maximale pour contrôler la position */
   background-color: #ddd;
+  overflow: hidden; /* Assure que le liquide ne dépasse pas la cuve */
 }
 
 .liquid {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: red; /* Couleur initiale du liquide */
   transition: height 0.5s;
 }
 
