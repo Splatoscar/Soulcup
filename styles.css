@@ -242,7 +242,7 @@ h5 {
 	display: inline-block; /* Afficher les textes sur la même ligne */
 	margin-right: 50px; /* Espacement entre les textes */
 	font-size: 20px;
-	color : blue;
+	color : red;
 	font-weight: bold;
 }
 
