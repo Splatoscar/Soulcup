@@ -105,7 +105,7 @@ h2 {
 
 p {
   font-size: 17px; /* Ajustez la valeur selon vos besoins */
-color: white;
+  color: white;
 }
 
 .box {
@@ -210,6 +210,7 @@ h4 {
 h5 {
 	font-size: 25px;
 	text-decoration: underline;
+	color: white;
 }
 
 .bloc-couleur1 {
@@ -237,6 +238,7 @@ h5 {
   display: inline-block; /* Afficher les textes sur la même ligne */
   margin-right: 50px; /* Espacement entre les textes */
   font-size: 18px;
+color: white;
 }
 
 .capitaine-color {
