@@ -69,3 +69,16 @@ function sortByScoreAndDifference() {
 
 
 });
+
+// Initialiser la valeur du pourcentage
+let percentage = 7;
+
+// Mettre à jour la cuve avec la nouvelle valeur
+function updateTank() {
+  const tank = document.getElementById('liquid');
+  const newHeight = percentage + '%';
+  tank.style.height = newHeight;
+}
+
+// Appeler la fonction d'initialisation
+updateTank();
