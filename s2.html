@@ -1,13 +1,28 @@
 <html>
 <head>
-    <title>Soul League : Saison 1</title>
-	<link rel="icon" href="image/soul_cup_png.png" type="image/x-icon">
+    <title>Soul League : Saison 2</title>
+    <link rel="icon" href="image/soul_cup_png.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<meta charset="UTF-8">
-   <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tank {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background-color: #ddd;
+        }
+
+        .liquid {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            transition: height 0.5s;
+        }
+    </style>
 </head>
 <body>
 	<br>
@@ -34,7 +49,7 @@
 </body>
 <main>
 	<div class="container">
-        <h2 class="titre1">Saison 1</h2>
+        <h2 class="titre1">Saison 2</h2>
 	</div>
 	<br>
 	<div class="container">
@@ -43,8 +58,4 @@
 		Retrouvez ci-dessous les 3 divisions de cette saison</p>
 	</div>
 </main>
-<div class="tank">
-    <div class="liquid" id="liquid"></div>
-	<button onclick="changePercentage()">Changer le pourcentage</button>
-</div>
 </html>
