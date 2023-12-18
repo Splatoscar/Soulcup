@@ -34,7 +34,25 @@ body {
 	font-family: 'Splatfont2', sans-serif;
 
 	padding-top: 70px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
     margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
+}
+.tank {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: #ddd;
+}
+
+.liquid {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  transition: height 0.5s;
 }
 
 nav {
