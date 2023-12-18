@@ -41,34 +41,31 @@ function trierTableauParScore() {
 trierTableauParScore();
 
 function sortByScoreAndDifference() {
-    var table = document.querySelector("table");
-    var rows = Array.from(table.querySelectorAll("tbody tr"));
+  var table = document.querySelector("table");
+  var rows = Array.from(table.querySelectorAll("tbody tr"));
 
-    rows.sort(function(a, b) {
-      var scoreA = parseInt(a.cells[8].textContent);
-      var scoreB = parseInt(b.cells[8].textContent);
+  rows.sort(function(a, b) {
+    var scoreA = parseInt(a.cells[8].textContent);
+    var scoreB = parseInt(b.cells[8].textContent);
 
-      var differenceA = parseInt(a.cells[7].textContent);
-      var differenceB = parseInt(b.cells[7].textContent);
+    var differenceA = parseInt(a.cells[7].textContent);
+    var differenceB = parseInt(b.cells[7].textContent);
 
-      // Tri par score décroissant
-      if (scoreA !== scoreB) {
-        return scoreB - scoreA;
-      }
+    // Tri par score décroissant
+    if (scoreA !== scoreB) {
+      return scoreB - scoreA;
+    }
 
-      // Tri par différence de score décroissante
-      return differenceB - differenceA;
-    });
+    // Tri par différence de score décroissante
+    return differenceB - differenceA;
+  });
 
-    // Réorganiser les lignes du tableau selon le nouvel ordre
-    var tbody = table.querySelector("tbody");
-    rows.forEach(function(row) {
-      tbody.appendChild(row);
-    });
-  }
-
-
-});
+  // Réorganiser les lignes du tableau selon le nouvel ordre
+  var tbody = table.querySelector("tbody");
+  rows.forEach(function(row) {
+    tbody.appendChild(row);
+  });
+}
 
 // Initialiser la valeur du pourcentage
 let percentage = 7;
