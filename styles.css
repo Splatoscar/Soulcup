@@ -32,12 +32,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 	font-family: 'Splatfont2', sans-serif;
-
-	padding-top: 70px;
-	display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
     margin: 0; /* Pour s'assurer qu'il n'y a pas de marge autour du corps de la page */
 }
 .tank {
