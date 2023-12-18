@@ -18,18 +18,6 @@
             background-color: red;
             transition: height 0.5s;
         }
-
-        /* Nouvelle classe pour l'animation initiale */
-        .initial {
-            animation: initial 0.1s forwards;
-        }
-
-        /* Animation initiale */
-        @keyframes initial {
-            to {
-                height: 25%; /* Changer la hauteur initiale ici */
-            }
-        }
     </style>
 </head>
 <body>
@@ -48,10 +36,11 @@
             tank.style.height = newHeight;
         }
 
-        // Ajouter la classe 'initial' après le chargement de la page
+        // Définir la hauteur initiale lors du chargement de la page
         window.addEventListener('load', function() {
             const tank = document.getElementById('liquid');
-            tank.classList.add('initial');
+            const initialHeight = 7; // Changer la hauteur initiale ici
+            tank.style.height = initialHeight + '%';
         });
 
         // Appeler la fonction d'initialisation
