@@ -10,19 +10,11 @@
             height: 300px;
             background-color: #ddd;
         }
-
-        .liquid {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: red;
-            transition: height 0.5s;
-        }
     </style>
 </head>
 <body>
     <div class="tank">
-        <div class="liquid" id="liquid"></div>
+        <div class="liquid" id="liquid" style="height: 7%; background-color: red; transition: height 0.5s;"></div>
     </div>
 
     <script>
@@ -35,13 +27,6 @@
             const newHeight = percentage + '%';
             tank.style.height = newHeight;
         }
-
-        // Définir la hauteur initiale lors du chargement de la page
-        window.addEventListener('load', function() {
-            const tank = document.getElementById('liquid');
-            const initialHeight = 7; // Changer la hauteur initiale ici
-            tank.style.height = initialHeight + '%';
-        });
 
         // Appeler la fonction d'initialisation
         updateTank();
