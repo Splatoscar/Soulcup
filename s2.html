@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .tank {
-            position: relative;
+        .ink-tank {
             width: 200px;
             height: 300px;
             background-color: #ddd;
+            overflow: hidden;
+        }
+
+        .ink {
+            width: 100%;
+            height: 100%;
+            background: conic-gradient(
+                #ff4d4d 0% 5%,     /* Rouge */
+                #ff4d4d 20% 25%,   /* Rouge (plus foncé) */
+                #0077cc 25% 45%,   /* Bleu */
+                #0077cc 50% 70%,   /* Bleu (plus foncé) */
+                #ff4d4d 75% 90%,   /* Rouge (plus foncé) */
+                #ff4d4d 95% 100%   /* Rouge */
+            );
+            animation: inkAnimation 5s infinite linear;
+        }
+
+        @keyframes inkAnimation {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <div class="tank">
-        <div class="liquid" id="liquid" style="height: 7%; background-color: red; transition: height 0.5s;"></div>
+    <div class="ink-tank">
+        <div class="ink"></div>
     </div>
-
-    <script>
-        // Initialiser la valeur du pourcentage
-        let percentage = 7;
-
-        // Mettre à jour la cuve avec la nouvelle valeur
-        function updateTank() {
-            const tank = document.getElementById('liquid');
-            const newHeight = percentage + '%';
-            tank.style.height = newHeight;
-        }
-
-        // Appeler la fonction d'initialisation
-        updateTank();
-    </script>
 </body>
 </html>
