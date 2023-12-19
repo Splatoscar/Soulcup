@@ -15,9 +15,11 @@
         .liquid-tank {
             position: relative;
             width: 60%;
-            height: 40px;
+            height: calc(var(--percentage) * 100%);
             background-color: #3498db;
             overflow: hidden;
+            display: flex;
+            align-items: flex-end;
         }
 
         .bubble {
@@ -47,11 +49,11 @@
 
         @keyframes bubbleMove {
             0%, 100% {
-                transform: translate(-50%, -50%);
+                transform: translate(calc(-50% + 100% * var(--random-x)), calc(-50% + 100% * var(--random-y)));
             }
 
             50% {
-                transform: translate(calc(-50% + 100% * var(--random-x)), calc(-50% + 100% * var(--random-y)));
+                transform: translate(-50%, -50%);
             }
         }
 
