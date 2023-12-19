@@ -15,7 +15,7 @@
         .liquid-tank {
             position: relative;
             width: 60%;
-            height: calc(var(--percentage) * 100%);
+            height: 200px; /* Hauteur fixe pour la démo, ajustez selon vos besoins */
             background-color: #3498db;
             overflow: hidden;
             display: flex;
@@ -70,7 +70,7 @@
 </head>
 <body>
     <div class="liquid-container">
-        <div class="liquid-tank" style="--percentage: 50%;">
+        <div class="liquid-tank">
             <div class="bubble" style="--random-x: 0.2; --random-y: 0.3;"></div>
             <div class="bubble" style="--random-x: 0.6; --random-y: 0.8;"></div>
             <div class="bubble" style="--random-x: 0.8; --random-y: 0.5;"></div>
