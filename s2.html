@@ -4,45 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        .liquid-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
         .liquid-tank {
             position: relative;
-            width: 100%;
-            height: 20px;
-            background-color: #ddd;
+            width: 60%;
+            height: 40px;
+            background-color: #3498db;
             overflow: hidden;
         }
 
         .bubble {
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
-            background-color: #3498db;
+            background-color: rgba(255, 255, 255, 0.8);
             position: absolute;
-            animation: bubbleMove 2s infinite linear;
+            animation: bubbleMove 2s infinite linear, bubbleColor 4s infinite linear;
+        }
+
+        .bubble:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .bubble:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        .bubble:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        .bubble:nth-child(5) {
+            animation-delay: 0.75s;
         }
 
         @keyframes bubbleMove {
-            0% {
+            0%, 100% {
                 transform: translateY(0);
             }
 
             50% {
                 transform: translateY(-20px);
             }
+        }
 
-            100% {
-                transform: translateY(0);
+        @keyframes bubbleColor {
+            0%, 100% {
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+
+            50% {
+                background-color: rgba(255, 255, 255, 0.4);
             }
         }
     </style>
 </head>
 <body>
-    <div class="liquid-tank">
-        <div class="bubble"></div>
-        <div class="bubble" style="left: 20%;"></div>
-        <div class="bubble" style="left: 40%;"></div>
-        <div class="bubble" style="left: 60%;"></div>
-        <div class="bubble" style="left: 80%;"></div>
+    <div class="liquid-container">
+        <div class="liquid-tank">
+            <div class="bubble"></div>
+            <div class="bubble" style="left: 20%;"></div>
+            <div class="bubble" style="left: 40%;"></div>
+            <div class="bubble" style="left: 60%;"></div>
+            <div class="bubble" style="left: 80%;"></div>
+        </div>
     </div>
 </body>
 </html>
