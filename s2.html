@@ -1,82 +1,45 @@
-<!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .liquid-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f2f2f2;
-        }
-
-        .liquid-tank {
-            position: relative;
-            width: 60%;
-            height: 200px; /* Hauteur fixe pour la démo, ajustez selon vos besoins */
-            background-color: #3498db;
-            overflow: hidden;
-            display: flex;
-            align-items: flex-end;
-        }
-
-        .bubble {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.8);
-            position: absolute;
-            animation: bubbleMove 2s infinite linear, bubbleColor 4s infinite linear;
-        }
-
-        .bubble:nth-child(2) {
-            animation-delay: 1s;
-        }
-
-        .bubble:nth-child(3) {
-            animation-delay: 0.5s;
-        }
-
-        .bubble:nth-child(4) {
-            animation-delay: 1.5s;
-        }
-
-        .bubble:nth-child(5) {
-            animation-delay: 0.75s;
-        }
-
-        @keyframes bubbleMove {
-            0%, 100% {
-                transform: translate(calc(-50% + 100% * var(--random-x)), calc(-50% + 100% * var(--random-y)));
-            }
-
-            50% {
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        @keyframes bubbleColor {
-            0%, 100% {
-                background-color: rgba(255, 255, 255, 0.8);
-            }
-
-            50% {
-                background-color: rgba(255, 255, 255, 0.4);
-            }
-        }
-    </style>
+    <title>Soul League : Saison 1</title>
+	<link rel="icon" href="image/soul_cup_png.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<meta charset="UTF-8">
 </head>
 <body>
-    <div class="liquid-container">
-        <div class="liquid-tank">
-            <div class="bubble" style="--random-x: 0.2; --random-y: 0.3;"></div>
-            <div class="bubble" style="--random-x: 0.6; --random-y: 0.8;"></div>
-            <div class="bubble" style="--random-x: 0.8; --random-y: 0.5;"></div>
-            <div class="bubble" style="--random-x: 0.4; --random-y: 0.2;"></div>
-            <div class="bubble" style="--random-x: 0.1; --random-y: 0.7;"></div>
-        </div>
-    </div>
+	<br>
+	<a href="soulleague.html">
+		<img src="image/Palourde.png" alt="Description de l'image" style="width: 40px;" >
+	</a>
+	<header>
+	<div class="container">
+		<nav>
+            <ul>
+				
+				<li><a href="division1.html">Division 1</a></li>
+				<li><a href="division2.html">Division 2</a></li>
+				<li><a href="division3.html">Division 3</a></li>
+				<li><a href="defis.html">Défis</a></li>
+            </ul>
+        </nav>
+	</div>
+	</header>
 </body>
+<main>
+	<div class="container">
+        <h2 class="titre1">Saison 1</h2>
+	</div>
+	<br>
+	<div class="container">
+		<p class="paragraphe1">La Saison 1 de la Soul League regroupe 18 équipes et plus de 105 joueurs.<br>
+		Elle a débuté le 29 Mai 2023 et s'est terminée le 23 Juillet 2023.<br>
+		Retrouvez ci-dessous les 3 divisions de cette saison</p>
+	</div>
+</main>
 </html>
+
+
+
+
+
