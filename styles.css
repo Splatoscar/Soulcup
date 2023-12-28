@@ -105,6 +105,11 @@ p {
   color: white;
 }
 
+.p2 {
+  font-size: 17px; /* Ajustez la valeur selon vos besoins */
+  color: black;
+}
+
 .box {
   background-color: #f2f2f2;
   border: 4px solid #ccc;
