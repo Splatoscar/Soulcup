@@ -107,7 +107,7 @@ p {
 
 .p2 {
   font-size: 14px; /* Ajustez la valeur selon vos besoins */
-  color: black;
+  color: white;
 }
 
 .box {
@@ -122,8 +122,8 @@ p {
 table {
   width: 900px; /* Définit la largeur du tableau à 100% de son conteneur */
   border-collapse: collapse; /* Fusionne les bordures des cellules */
-  background-color: #c0c0c0; /* Définit la couleur de fond du tableau */
-  border: 3px solid black;
+  background-color: black; /* Définit la couleur de fond du tableau */
+  border: 3px solid white;
   margin-left : 50px;
   margin-right : 50px;
 }
