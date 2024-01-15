@@ -100,3 +100,8 @@ function generateRandomArme() {
 function getRandomEntry(data) {
     return data[Math.floor(Math.random() * data.length)];
 }
+
+function afficherTest() {
+    const resultatElement = document.getElementById('resultat');
+    resultatElement.innerText = 'test';
+}
