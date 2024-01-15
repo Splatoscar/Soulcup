@@ -36,12 +36,21 @@
     </header>
 
     <main>
-	<!-- Bouton pour afficher "test" -->
-    <button onclick="afficherTest()">Cliquez ici</button>
-    
-    <!-- Zone pour afficher le résultat -->
-    <p id="resultat"></p>
-	
+	<!-- Bouton -->
+<button onclick="afficherImage()">Afficher l'image</button>
+
+<!-- Conteneur de l'image -->
+<div id="image-container">
+    <img src="chemin/vers/votre/image.jpg" alt="Image">
+</div>
+
+<!-- Script JavaScript -->
+<script>
+    function afficherImage() {
+        var imageContainer = document.getElementById("image-container");
+        imageContainer.style.display = "block"; // Afficher l'image
+    }
+</script>
     </main>
 
     <footer>
