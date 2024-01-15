@@ -80,13 +80,23 @@ function updateTank() {
 // Appeler la fonction d'initialisation
 updateTank();
 
-import { getRandomImage, imagesData1, imagesData2, imagesData3 } from 'armes.js';
+import armesData from 'armes.js';
 
-function generateRandomImage(imagesData, imgElementId) {
-    const randomEntry = getRandomImage(imagesData);
+function generateRandomArme() {
+    const randomEntry = getRandomEntry(armesSp1);
 
-    // Met à jour l'image dans la page
-    const imgElement = document.getElementById(imgElementId);
+    // Met à jour l'image et le nom dans la page
+    const imgElement = document.getElementById('randomArmeImage');
+    const nameElement = document.getElementById('randomArmeName');
+
     imgElement.src = randomEntry.url;
+    nameElement.innerText = randomEntry.name;
+
+    // Affiche l'image et le nom
     imgElement.style.display = 'block';
+    nameElement.style.display = 'block';
+}
+
+function getRandomEntry(data) {
+    return data[Math.floor(Math.random() * data.length)];
 }
