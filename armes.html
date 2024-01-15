@@ -21,8 +21,11 @@
             cursor: pointer; /* Ajout pour indiquer que l'image est cliquable */
         }
 
-        .image-container {
+        .container {
             text-align: center;
+        }
+
+        .image-container {
             margin-top: 40px; /* Ecart entre les boutons et les images */
         }
 
@@ -40,7 +43,7 @@
             margin: 0 auto; /* Centrer horizontalement */
         }
 
-	.nom-container {
+        .nom-container {
             margin-top: 10px; /* Ecart entre l'image et le nom */
         }
     </style>
@@ -49,24 +52,25 @@
 
 <!-- Boutons -->
 <div class="button-container">
-    <img src="image/sp1.png" alt="Image 1" onclick="afficherImage('weaponSp1', 'monImage1')">
-    <img src="image/sp2.webp" alt="Image 2" onclick="afficherImage('weaponSp2', 'monImage2')">
-    <img src="image/sp3.png" alt="Image 3" onclick="afficherImage('weaponSp3', 'monImage3')">
+    <img src="image/sp1.png" alt="Image 1" onclick="afficherImage(weaponSp1, 'monImage1', 'nomContainer1')">
+    <img src="image/sp2.webp" alt="Image 2" onclick="afficherImage(weaponSp2, 'monImage2', 'nomContainer2')">
+    <img src="image/sp3.png" alt="Image 3" onclick="afficherImage(weaponSp3, 'monImage3', 'nomContainer3')">
 </div>
 
-<!-- Conteneur de l'image -->
+<!-- Conteneur de l'image et du nom -->
 <div class="container">
-<div class="image-container">
-    <img id="monImage1" class="image-personnalisee" src="" alt="Image 1">
-    <div id="nomContainer1" class="nom-container"></div>
+    <div class="image-container">
+        <img id="monImage1" class="image-personnalisee" src="" alt="Image 1">
+        <div id="nomContainer1" class="nom-container"></div>
 
-    <img id="monImage2" class="image-personnalisee" src="" alt="Image 2">
-    <div id="nomContainer2" class="nom-container"></div>
+        <img id="monImage2" class="image-personnalisee" src="" alt="Image 2">
+        <div id="nomContainer2" class="nom-container"></div>
 
-    <img id="monImage3" class="image-personnalisee" src="" alt="Image 3">
-    <div id="nomContainer3" class="nom-container"></div>
+        <img id="monImage3" class="image-personnalisee" src="" alt="Image 3">
+        <div id="nomContainer3" class="nom-container"></div>
+    </div>
 </div>
-</div>
+
 <!-- Script JavaScript -->
 <script>
     // Tableaux de données pour chaque bouton
