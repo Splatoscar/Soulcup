@@ -8,69 +8,57 @@
     <script type="module" src="data.js"></script>
 	<meta charset="UTF-8">
 	<style>
-        #image-container {
-            width: 20px; /* Redimensionner l'image pour s'adapter à la largeur du conteneur */
-            height: auto; /* Garantir que l'image conserve ses proportions */
-	    display: none; /* Masquer l'image par défaut */
-            text-align: center; /* Centrer l'image horizontalement */
-        }
-
-	 .button-container {
+        .button-container {
             text-align: center;
             margin-bottom: 20px;
-	    margin-right: 10px;
+        }
+
+        .button-container button {
+            margin-right: 10px; /* Ajout de marge entre les boutons */
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px; /* Ecart entre les boutons et les images */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: none; /* Masquer les images par défaut */
         }
     </style>
 </head>
 <body>
-    <header>
-	</n>
-	</n>
-	<div class="container">
-		<img src="image/soul_cup_png.png" alt="logo by low" height="200px">
-	</div>
-	</n>
-	<div class="container">
-        <h1 class="titre1">Soul Cup</h1>
-	</div>
-	<div class="container">
-		<p class="paragraphe1"> Bienvenue sur le site web de la Soul Cup !</p>
-	</div>
-	<div class="container">
-		<p class="paragraphe2"> Retrouvez ici même de quoi pimenter vos parties, quelques soient votre opus !</p>
-	</div>
-	<div class="container">
-		<nav>
-            <ul>
-              	<li><a href="index.html">Accueil</a></li>
-                <li><a href="soulleague.html">Soul League</a></li>
-            </ul>
-        </nav>
-	</div>
-    </header>
 
-    <main>
-	<!-- Bouton -->
+<!-- Boutons -->
 <div class="button-container">
     <button onclick="afficherImage('image/Discord.png', 'monImage1')">Afficher Image 1</button>
-    <button onclick="afficherImage('image/Fear.png', 'monImage2')">Afficher Image 2</button>
-    <button onclick="afficherImage('image/X.png', 'monImage3')">Afficher Image 3</button>
+    <button onclick="afficherImage('image/Discord.png', 'monImage2')">Afficher Image 2</button>
+    <button onclick="afficherImage('image/Discord.png', 'monImage3')">Afficher Image 3</button>
 </div>
 
 <!-- Conteneur de l'image -->
 <div class="image-container">
-    <img id="monImage1" class="image-personnalisee" src="" alt="Image 1" height="100px">
-    <img id="monImage2" class="image-personnalisee" src="" alt="Image 2" height="100px">
-    <img id="monImage3" class="image-personnalisee" src="" alt="Image 3" height="100px">
+    <img id="monImage1" class="image-personnalisee" src="" alt="Image 1" height="50px">
+    <img id="monImage2" class="image-personnalisee" src="" alt="Image 2" height="50px">
+    <img id="monImage3" class="image-personnalisee" src="" alt="Image 3" height="50px">
 </div>
 
 <!-- Script JavaScript -->
 <script>
     function afficherImage(cheminImage, idImage) {
         var monImage = document.getElementById(idImage);
-        
-        // Charger l'image spécifiée
+
+        // Masquer toutes les images
+        var toutesLesImages = document.querySelectorAll('.image-container img');
+        toutesLesImages.forEach(function(img) {
+            img.style.display = 'none';
+        });
+
+        // Afficher l'image spécifiée
         monImage.src = cheminImage;
+        monImage.style.display = 'block';
     }
 </script>
 
