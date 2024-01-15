@@ -17,6 +17,11 @@
             width: 5%; /* Redimensionner l'image pour s'adapter à la largeur du conteneur */
             height: auto; /* Garantir que l'image conserve ses proportions */
         }
+
+	 .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -48,27 +53,29 @@
 
     <main>
 	<!-- Bouton -->
-<div class="container">
-	<button onclick="afficherImage()">Afficher l'image</button>
+<div class="button-container">
+    <button onclick="afficherImage('image/Discord.png')">Afficher Image 1</button>
+    <button onclick="afficherImage('image/Fear.png')">Afficher Image 2</button>
+    <button onclick="afficherImage('image/Determination.png')">Afficher Image 3</button>
 </div>
-
 
 <!-- Conteneur de l'image -->
 <div id="image-container">
-    <img src="image/Discord.png" alt="Image">
+    <img id="monImage" class="image-personnalisee" src="" alt="Image">
 </div>
 
 <!-- Script JavaScript -->
 <script>
-    function afficherImage() {
+    function afficherImage(cheminImage) {
         var imageContainer = document.getElementById("image-container");
-        imageContainer.style.display = "block"; // Afficher l'image
+        var monImage = document.getElementById("monImage");
+        
+        // Afficher l'image
+        imageContainer.style.display = "block";
+        
+        // Charger l'image spécifiée
+        monImage.src = cheminImage;
     }
 </script>
-    </main>
-
-    <footer>
-       
-    </footer>
 </body>
 </html>
