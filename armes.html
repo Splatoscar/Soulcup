@@ -21,6 +21,7 @@
 	 .button-container {
             text-align: center;
             margin-bottom: 20px;
+	    margin-right: 10px;
         }
     </style>
 </head>
@@ -60,22 +61,24 @@
 </div>
 
 <!-- Conteneur de l'image -->
-<div id="image-container">
+<div class="image-container">
     <img id="monImage" class="image-personnalisee" src="" alt="Image">
 </div>
 
 <!-- Script JavaScript -->
 <script>
     function afficherImage(cheminImage) {
-        var imageContainer = document.getElementById("image-container");
+        var imageContainer = document.querySelector(".image-container");
         var monImage = document.getElementById("monImage");
         
-        // Afficher l'image
-        imageContainer.style.display = "block";
+        // Créer une nouvelle image
+        var nouvelleImage = new Image();
+        nouvelleImage.src = cheminImage;
         
-        // Charger l'image spécifiée
-        monImage.src = cheminImage;
+        // Ajouter la nouvelle image au conteneur
+        imageContainer.appendChild(nouvelleImage);
     }
 </script>
+
 </body>
 </html>
