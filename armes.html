@@ -14,7 +14,7 @@
         }
 
         #image-container img {
-            max-width: 100%; /* Redimensionner l'image pour s'adapter à la largeur du conteneur */
+            width: 20%; /* Redimensionner l'image pour s'adapter à la largeur du conteneur */
             height: auto; /* Garantir que l'image conserve ses proportions */
         }
     </style>
@@ -48,7 +48,10 @@
 
     <main>
 	<!-- Bouton -->
-<button onclick="afficherImage()">Afficher l'image</button>
+<div class="container">
+	<button onclick="afficherImage()">Afficher l'image</button>
+</div>
+
 
 <!-- Conteneur de l'image -->
 <div id="image-container">
