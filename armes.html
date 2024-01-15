@@ -39,6 +39,10 @@
             height: auto;
             margin: 0 auto; /* Centrer horizontalement */
         }
+
+	.nom-container {
+            margin-top: 10px; /* Ecart entre l'image et le nom */
+        }
     </style>
 </head>
 <body>
@@ -54,14 +58,42 @@
 <div class="container">
 <div class="image-container">
     <img id="monImage1" class="image-personnalisee" src="" alt="Image 1">
+    <div id="nomContainer1" class="nom-container"></div>
+
     <img id="monImage2" class="image-personnalisee" src="" alt="Image 2">
+    <div id="nomContainer2" class="nom-container"></div>
+
     <img id="monImage3" class="image-personnalisee" src="" alt="Image 3">
+    <div id="nomContainer3" class="nom-container"></div>
 </div>
 </div>
 <!-- Script JavaScript -->
 <script>
-    function afficherImage(cheminImage, idImage) {
+    // Tableaux de données pour chaque bouton
+    var weaponSp1 = [
+        { nom: "Arme 1A", image: "image/Determination.png" },
+        { nom: "Arme 1B", image: "image/Fear.png" },
+        // Ajoutez d'autres éléments au besoin
+    ];
+
+    var weaponSp2 = [
+        { nom: "Arme 2A", image: "image/Determination.png" },
+        { nom: "Arme 2B", image: "image/Fear.png" },
+        // Ajoutez d'autres éléments au besoin
+    ];
+
+    var weaponSp3 = [
+        { nom: "Arme 3A", image: "image/Determination.png" },
+        { nom: "Arme 3B", image: "image/Fear.png" },
+        // Ajoutez d'autres éléments au besoin
+    ];
+
+    function afficherImage(tableau, idImage, idNomContainer) {
         var monImage = document.getElementById(idImage);
+        var nomContainer = document.getElementById(idNomContainer);
+
+        // Choix aléatoire d'un élément dans le tableau
+        var elementAleatoire = tableau[Math.floor(Math.random() * tableau.length)];
 
         // Masquer toutes les images
         var toutesLesImages = document.querySelectorAll('.image-container img');
@@ -70,8 +102,11 @@
         });
 
         // Afficher l'image spécifiée
-        monImage.src = cheminImage;
+        monImage.src = elementAleatoire.image;
         monImage.style.display = 'block';
+
+        // Afficher le nom associé
+        nomContainer.innerHTML = elementAleatoire.nom;
     }
 </script>
 </body>
