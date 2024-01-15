@@ -79,3 +79,14 @@ function updateTank() {
 
 // Appeler la fonction d'initialisation
 updateTank();
+
+import { getRandomImage, imagesData1, imagesData2, imagesData3 } from 'armes.js';
+
+function generateRandomImage(imagesData, imgElementId) {
+    const randomEntry = getRandomImage(imagesData);
+
+    // Met à jour l'image dans la page
+    const imgElement = document.getElementById(imgElementId);
+    imgElement.src = randomEntry.url;
+    imgElement.style.display = 'block';
+}
