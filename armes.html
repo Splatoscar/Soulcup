@@ -45,6 +45,7 @@
 
         .nom-container {
             margin-top: 10px; /* Ecart entre l'image et le nom */
+            display: none; /* Masquer le nom par défaut */
         }
     </style>
 </head>
@@ -99,10 +100,15 @@
         // Choix aléatoire d'un élément dans le tableau
         var elementAleatoire = tableau[Math.floor(Math.random() * tableau.length)];
 
-        // Masquer toutes les images
+        // Masquer toutes les images et les noms
         var toutesLesImages = document.querySelectorAll('.image-container img');
         toutesLesImages.forEach(function(img) {
             img.style.display = 'none';
+        });
+
+        var tousLesNoms = document.querySelectorAll('.nom-container');
+        tousLesNoms.forEach(function(nom) {
+            nom.style.display = 'none';
         });
 
         // Afficher l'image spécifiée
@@ -111,6 +117,7 @@
 
         // Afficher le nom associé
         nomContainer.innerHTML = elementAleatoire.nom;
+        nomContainer.style.display = 'block';
     }
 </script>
 </body>
