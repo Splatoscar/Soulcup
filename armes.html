@@ -8,10 +8,10 @@
     <script type="module" src="data.js"></script>
 	<meta charset="UTF-8">
 	<style>
-        .button-container {
+         .button-container {
             text-align: center;
             margin-bottom: 20px;
-	    margin-right: 50px;
+            margin-right: 50px;
         }
 
         .image-container {
@@ -20,27 +20,26 @@
         }
 
         .image-container img {
-            max-width: 100%;
+            max-width: 200px; /* Taille maximale des images bouton */
             height: auto;
-            display: none; /* Masquer les images par défaut */
-            margin: 0 auto; /* Centrer horizontalement */
+            margin-right: 10px; /* Espacement entre les images bouton */
             cursor: pointer; /* Ajout pour indiquer que l'image est cliquable */
+            display: none; /* Masquer les images par défaut */
         }
 
-	.image-personnalisee {
-		max-width: 100%;
-            	height: auto;
-	}
-		
+        .image-personnalisee {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
 <!-- Boutons -->
 <div class="button-container">
-    <img src="image/sp1.png" alt="Image 1" style="width: 200px; margin-right: 10px;" onclick="afficherImage('image/Discord.png', 'monImage1')">
-    <img src="image/sp2.webp" alt="Image 2" style="width: 200px; margin-right: 10px;" onclick="afficherImage('image/Determination.png', 'monImage2')">
-    <img src="image/sp3.png" alt="Image 3" style="width: 200px; margin-right: 10px;" onclick="afficherImage('image/Fear.png', 'monImage3')">
+    <img src="image/sp1.png" alt="Image 1" onclick="afficherImage('image/Discord.png', 'monImage1')">
+    <img src="image/sp2.webp" alt="Image 2" onclick="afficherImage('image/Determination.png', 'monImage2')">
+    <img src="image/sp3.png" alt="Image 3" onclick="afficherImage('image/Fear.png', 'monImage3')">
 </div>
 
 <!-- Conteneur de l'image -->
@@ -66,6 +65,5 @@
         monImage.style.display = 'block';
     }
 </script>
-
 </body>
 </html>
