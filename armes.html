@@ -36,30 +36,14 @@
     </header>
 
     <main>
-	<!-- Boutons pour générer des images -->
-    <button onclick="generateRandomImage(imagesData1)">Générer Image 1</button>
-    <img id="randomImage1" alt="Image 1" style="display: none;">
+	<!-- Bouton pour générer une arme aléatoire -->
+    <button onclick="generateRandomArme()">Générer Arme Aléatoire</button>
     
-    <button onclick="generateRandomImage(imagesData2)">Générer Image 2</button>
-    <img id="randomImage2" alt="Image 2" style="display: none;">
-
-    <button onclick="generateRandomImage(imagesData3)">Générer Image 3</button>
-    <img id="randomImage3" alt="Image 3" style="display: none;">
-
-<script>
-    // Appelle les fonctions appropriées pour chaque bouton
-    document.querySelector("button:nth-of-type(1)").addEventListener("click", function () {
-        generateRandomImage(imagesData1, 'randomImage1');
-    });
-
-    document.querySelector("button:nth-of-type(2)").addEventListener("click", function () {
-        generateRandomImage(imagesData2, 'randomImage2');
-    });
-
-    document.querySelector("button:nth-of-type(3)").addEventListener("click", function () {
-        generateRandomImage(imagesData3, 'randomImage3');
-    });
-</script>
+    <!-- Zone pour afficher l'image et le nom -->
+    <div>
+        <img id="randomArmeImage" alt="Arme aléatoire" style="display: none;">
+        <p id="randomArmeName"></p>
+    </div>
 
 	
     </main>
