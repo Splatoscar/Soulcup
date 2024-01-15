@@ -55,28 +55,25 @@
     <main>
 	<!-- Bouton -->
 <div class="button-container">
-    <button onclick="afficherImage('image/Discord.png')">Afficher Image 1</button>
-    <button onclick="afficherImage('image/Fear.png')">Afficher Image 2</button>
-    <button onclick="afficherImage('image/Determination.png')">Afficher Image 3</button>
+    <button onclick="afficherImage('image/Discord.png', 'monImage1')">Afficher Image 1</button>
+    <button onclick="afficherImage('image/Fear.png', 'monImage2')">Afficher Image 2</button>
+    <button onclick="afficherImage('image/X.png', 'monImage3')">Afficher Image 3</button>
 </div>
 
 <!-- Conteneur de l'image -->
 <div class="image-container">
-    <img id="monImage" class="image-personnalisee" src="" alt="Image">
+    <img id="monImage1" class="image-personnalisee" src="" alt="Image 1">
+    <img id="monImage2" class="image-personnalisee" src="" alt="Image 2">
+    <img id="monImage3" class="image-personnalisee" src="" alt="Image 3">
 </div>
 
 <!-- Script JavaScript -->
 <script>
-    function afficherImage(cheminImage) {
-        var imageContainer = document.querySelector(".image-container");
-        var monImage = document.getElementById("monImage");
+    function afficherImage(cheminImage, idImage) {
+        var monImage = document.getElementById(idImage);
         
-        // Créer une nouvelle image
-        var nouvelleImage = new Image();
-        nouvelleImage.src = cheminImage;
-        
-        // Ajouter la nouvelle image au conteneur
-        imageContainer.appendChild(nouvelleImage);
+        // Charger l'image spécifiée
+        monImage.src = cheminImage;
     }
 </script>
 
