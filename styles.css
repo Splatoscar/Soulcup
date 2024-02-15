@@ -142,6 +142,7 @@ table {
 th, td {
   padding: 5px; /* Ajoute un espace intérieur de 10 pixels aux cellules */
   text-align: center; /* Centre le contenu des cellules */
+  font-size : 20px;
 }
 
 tbody tr:nth-child(even) {
