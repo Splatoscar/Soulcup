@@ -120,7 +120,7 @@ p {
 }
 
 table {
-  width: 900px; /* Définit la largeur du tableau à 100% de son conteneur */
+  width: 1300px; /* Définit la largeur du tableau à 100% de son conteneur */
   border-collapse: collapse; /* Fusionne les bordures des cellules */
   background-color: #c0c0c0; /* Définit la couleur de fond du tableau */
   border: 3px solid black;
