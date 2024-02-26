@@ -257,6 +257,17 @@ color: white;
       max-width: 40%; /* Largeur maximale de l'image */
     }
 
+.footer-bar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
 #monGraphique {
   background-color: rgba(221, 160, 221, 0.7);
 }
