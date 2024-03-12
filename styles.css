@@ -120,7 +120,7 @@ p {
 }
 
 table {
-  width: 1300px; /* Définit la largeur du tableau à 100% de son conteneur */
+  width: 800px; /* Définit la largeur du tableau à 100% de son conteneur */
   border-collapse: collapse; /* Fusionne les bordures des cellules */
   background-color: #c0c0c0; /* Définit la couleur de fond du tableau */
   border: 3px solid black;
@@ -129,7 +129,7 @@ table {
 }
 
 .custom-table {
-      width: 500px; /* Changer cette valeur selon votre besoin */
+      width: 400px; /* Changer cette valeur selon votre besoin */
       margin: 0 auto; /* Centrer le tableau horizontalement */
       border-collapse: collapse;
       border: 3px solid black;
@@ -154,7 +154,7 @@ tbody tr:nth-child(odd) {
 }
 
 .image-colonne {
-  width: 50px; /* Définissez la largeur souhaitée pour les images */
+  width: 30px; /* Définissez la largeur souhaitée pour les images */
   height: auto; /* Permet de conserver les proportions d'origine de l'image */
 }
 
