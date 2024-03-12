@@ -141,7 +141,7 @@ table {
 th, td {
   padding: 5px; /* Ajoute un espace intérieur de 10 pixels aux cellules */
   text-align: center; /* Centre le contenu des cellules */
-  font-size : 20px;
+  font-size : 10px;
 }
 
 tbody tr:nth-child(even) {
@@ -149,7 +149,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #f9f9f9; /* Définit la couleur de fond des lignes impaires */
+  background-color: #d3d3d3; /* Définit la couleur de fond des lignes impaires */
 }
 
 .image-colonne {
