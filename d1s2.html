@@ -5,6 +5,44 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
 	<meta charset="UTF-8">
+	<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+        }
+        .progress-bar-container {
+            margin: 20px 0;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(to right, red, black);
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            width: 100%;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        img {
+            max-height: 50px;
+            width: auto;
+        }
+    </style>
 </head>
 <body>
 	<br>
@@ -331,5 +369,47 @@
 <br>
 <br>
 <br>
+<div class="container">
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="image-container">
+                <img src="image/medaille/charakill.png" alt="Kill">
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="image-container">
+                <img src="image/medaille/charamort.png" alt="Mort">
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="image-container">
+                <img src="image/medaille/charaassist" alt="Assits">
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="image-container">
+                <img src="image/medaille/charaspé.png" alt="Spéciaux">
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="image-container">
+                <img src="image/medaille/charaturf.png" alt="Encrage">
+            </div>
+        </div>
+    </div>
 </main>
 </html>
