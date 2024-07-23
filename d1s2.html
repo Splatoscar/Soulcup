@@ -921,7 +921,7 @@
 				<h4>Pick and Ban</h4>
 	</div>
 	<br>
-<canvas id="monGraphique3" width="300" height="200"></canvas>
+<canvas id="monGraphique3" width="600" height="400"></canvas>
 <script>
   // Obtenez le contexte du canvas
   var ctx = document.getElementById('monGraphique3').getContext('2d');
@@ -932,6 +932,9 @@
   var pdp = [0,0,0,0,0,0,0,0,2,2,2,2,4,2,0,0,0,0,0,0];
   var mb = [0,0,1,0,0,0,2,0,1,0,0,0,2,0,0,5,3,1,1,0];
   var er = [0,0,2,0,0,0,0,0,0,0,0,0,3,1,0,5,0,0,0,3];
+
+  // Couleur de fond pour le graphique (par exemple : gris clair avec une légère transparence)
+  var couleurFond = 'rgba(200, 200, 200, 0.2)';
 
   // Créez le graphique en barres groupées
   var monGraphique = new Chart(ctx, {
@@ -944,32 +947,32 @@
         backgroundColor: 'rgba(255, 99, 132, 0.7)', // Couleur de remplissage des barres pour les kills
         borderColor: 'rgba(255, 99, 132, 1)', // Couleur des bordures des barres pour les kills
         borderWidth: 1, // Largeur des bordures des barres pour les kills
-        barPercentage: 0.2, // Pourcentage de largeur des barres pour les kills (20% de la largeur disponible)
-        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les kills (33% de la largeur disponible)
+        barPercentage: 0.8, // Pourcentage de largeur des barres pour les kills (80% de la largeur disponible)
+        categoryPercentage: 0.4 // Pourcentage de largeur des groupes de barres pour les kills (40% de la largeur disponible)
       }, {
         label: 'Pdp',
         data: pdp, // Le nombre d'assists sur l'axe des ordonnées pour chaque arme
         backgroundColor: 'rgba(54, 162, 235, 0.7)', // Couleur de remplissage des barres pour les assists
         borderColor: 'rgba(54, 162, 235, 1)', // Couleur des bordures des barres pour les assists
         borderWidth: 1, // Largeur des bordures des barres pour les assists
-        barPercentage: 0.2, // Pourcentage de largeur des barres pour les assists (20% de la largeur disponible)
-        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les assists (33% de la largeur disponible)
+        barPercentage: 0.8, // Pourcentage de largeur des barres pour les assists (80% de la largeur disponible)
+        categoryPercentage: 0.4 // Pourcentage de largeur des groupes de barres pour les assists (40% de la largeur disponible)
       }, {
         label: 'Mb',
         data: mb, // Le nombre de morts sur l'axe des ordonnées pour chaque arme
         backgroundColor: 'rgba(75, 192, 192, 0.7)', // Couleur de remplissage des barres pour les morts
         borderColor: 'rgba(75, 192, 192, 1)', // Couleur des bordures des barres pour les morts
         borderWidth: 1, // Largeur des bordures des barres pour les morts
-        barPercentage: 0.2, // Pourcentage de largeur des barres pour les morts (20% de la largeur disponible)
-        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les morts (33% de la largeur disponible)
+        barPercentage: 0.8, // Pourcentage de largeur des barres pour les morts (80% de la largeur disponible)
+        categoryPercentage: 0.4 // Pourcentage de largeur des groupes de barres pour les morts (40% de la largeur disponible)
       }, {
         label: 'Er',
         data: er, // Le nombre de morts sur l'axe des ordonnées pour chaque arme
-        backgroundColor: 'rgba(75, 192, 192, 0.7)', // Couleur de remplissage des barres pour les morts
-        borderColor: 'rgba(75, 192, 192, 1)', // Couleur des bordures des barres pour les morts
+        backgroundColor: 'rgba(153, 102, 255, 0.7)', // Couleur de remplissage des barres pour les morts
+        borderColor: 'rgba(153, 102, 255, 1)', // Couleur des bordures des barres pour les morts
         borderWidth: 1, // Largeur des bordures des barres pour les morts
-        barPercentage: 0.2, // Pourcentage de largeur des barres pour les morts (20% de la largeur disponible)
-        categoryPercentage: 0.33 // Pourcentage de largeur des groupes de barres pour les morts (33% de la largeur disponible)
+        barPercentage: 0.8, // Pourcentage de largeur des barres pour les morts (80% de la largeur disponible)
+        categoryPercentage: 0.4 // Pourcentage de largeur des groupes de barres pour les morts (40% de la largeur disponible)
       }]
     },
     options: {
@@ -998,7 +1001,7 @@
       },
       plugins: {
         legend: {
-          display: true // Afficher la légende (facultatif)
+          display: true // Afficher la légende
         }
       },
       layout: {
@@ -1013,6 +1016,7 @@
     }
   });
 </script>
+
 <br>
 </main>
 </html>
